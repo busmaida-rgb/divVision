@@ -1,0 +1,57 @@
+/* 상단띠배너 */
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+}
+
+.line1 {
+    background-color: #000;
+    color: #fff;
+}
+
+.line2 {
+    background-color: #fff;
+    color: #000;
+}
+
+/* 헤더 */
+header {
+    height: 5rem;
+}
+
+header>.common-frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 헤더로고 */
+header .logo {
+    height: 4.375rem;
+    line-height: 0;
+}
+
+/* GNB */
+.gnb {
+    display: flex;
+    height: 100%;
+}
+.gnb>li{
+    height: 100%;
+}
+.gnb>li>a{
+    height: 100%;
+    padding: 0 1rem;
+}
+
+/* 헤더우측아이콘들 */
+.head-icons>ul{
+    display: flex;
+    gap: 16px;
+    line-height: 0;
+}
+.head-icons img{
+    height: 24px;
+}

@@ -1,0 +1,142 @@
+:root {
+    /* 디바이스별 rem */
+    --fs-pc: 16px;
+    --fs-pad: 14px;
+    --fs-mo: 12px;
+
+    /* 기본 행간 */
+    --lh: 1.4;
+
+    /* PC 글씨 크기 */
+    --fs-pc-h1: 2.4375rem;
+    --fs-pc-h2: 1.9375rem;
+    --fs-pc-h3: 1.5625rem;
+    --fs-pc-h4: 1.25rem;
+    --fs-pc-body1: 1rem;
+    --fs-pc-body2: 0.8125rem;
+    --fs-pc-detail: 0.625rem;
+
+    /* PAD 글씨 크기 */
+    --fs-pad-h1: 2.0714rem;
+    --fs-pad-h2: 1.7143rem;
+    --fs-pad-h3: 1.4286rem;
+    --fs-pad-h4: 1.2143rem;
+    --fs-pad-body1: 1rem;
+    --fs-pad-body2: 0.8571rem;
+    --fs-pad-detail: 0.7143rem;
+
+    /* MOBILE 글씨 크기 */
+    --fs-mo-h1: 1.5833rem;
+    --fs-mo-h2: 1.4167rem;
+    --fs-mo-h3: 1.25rem;
+    --fs-mo-h4: 1.1667rem;
+    --fs-mo-body1: 1rem;
+    --fs-mo-body2: 0.9167rem;
+    --fs-mo-detail: 0.75rem;
+
+    /* font-weight */
+    --fw1: 400;
+    --fw2: 700;
+
+    /* 여백 */
+    --space-3rem: 3rem;
+    --space-2rem: 2rem;
+    --space-1rem: 1rem;
+
+    /* 색상 */
+    /* 메인-원본컬러 */
+    --main-color: #F0EBD8;
+
+    /* 그레이 */
+    --gray0: #CCCCCC;
+    --gray100: #C4C6C9;
+    --gray200: #BBBDC3;
+    --gray300: #AEB2B9;
+    --gray400: #9FA3AC;
+    --gray500: #8D9099;
+    --gray600: #757981;
+    --gray700: #595C62;
+    --gray800: #383A3F;
+    --gray900: #17181A;
+
+}
+
+html {
+    font-size: var(--fs-pc);
+    font-weight: var(--fw1);
+    font-family: 'Pretendard', sans-serif;
+    color: var(--gray900);
+}
+
+h1 {
+    font-size: var(--fs-pc-h1);
+}
+
+h2 {
+    font-size: var(--fs-pc-h2);
+}
+
+h3 {
+    font-size: var(--fs-pc-h3);
+}
+
+h4 {
+    font-size: var(--fs-pc-h4);
+}
+
+.common-frame {
+    padding: 0 var(--space-3rem);
+}
+
+
+@media (max-width:1024px) {
+    html {
+        font-size: var(--fs-pad);
+    }
+
+    h1 {
+        font-size: var(--fs-pad-h1);
+    }
+
+    h2 {
+        font-size: var(--fs-pad-h2);
+    }
+
+    h3 {
+        font-size: var(--fs-pad-h3);
+    }
+
+    h4 {
+        font-size: var(--fs-pad-h4);
+    }
+
+    .common-frame {
+        padding: 0 var(--space-2rem);
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: var(--fs-mo);
+    }
+
+    h1 {
+        font-size: var(--fs-mo-h1);
+    }
+
+    h2 {
+        font-size: var(--fs-mo-h2);
+    }
+
+    h3 {
+        font-size: var(--fs-mo-h3);
+    }
+
+    h4 {
+        font-size: var(--fs-mo-h4);
+    }
+
+    .common-frame {
+        padding: 0 var(--space-1rem);
+    }
+}
