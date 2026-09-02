@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
-    <script defer src="./js/header.js"></script>
+    <script src="./js/swiper.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <title>키엘 - 포트폴리오</title>
 </head>
 
@@ -18,43 +20,12 @@
         <div class="line line1">키엘 신규고객 전 품목 15% 할인</div>
         <div class="line line2">전 구매 고객 여행용 샘플 증정</div>
     </div>
-    <!-- 헤더 -->
+    <!-- 헤더-PC -->
     <header>
         <div class="common-frame">
             <!-- 헤더로고 -->
             <a href="./index.html" class="logo"><img src="./img/logo-black.svg" alt="키엘 홈페이지 바로가기"></a>
             <!-- GNB -->
-            <!-- <ul class="gnb">
-                <li>
-                    <a href="#">NEW</a>
-                </li>
-                <li>
-                    <a href="#">BEST SELLER</a>
-                </li>
-                <li>
-                    <a href="#">SKINCARE</a>
-                    <ul>
-                        <li>
-
-                        </li>
-                        <li>
-
-                        </li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">BODY & HAIR</a>
-                </li>
-                <li>
-                    <a href="#">PROMOTION</a>
-                </li>
-                <li>
-                    <a href="#">ABOUT</a>
-                </li>
-            </ul> -->
-
             <ul class="gnb">
                 <li class="gnb1depth">
                     <a class="gnb1depth-a" href="#">NEW</a>
@@ -90,13 +61,13 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image1.jpg" alt="피부 진단 서비스">
                                 </a>
                                 <p>피부 진단 서비스</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image2.jpg" alt="칼렌듈라 꽃잎 진정 토너">
                                 </a>
                                 <p>칼렌듈라 꽃잎 진정 토너</p>
                             </section>
@@ -127,13 +98,13 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image3.jpg" alt="키엘 오리지널 머스크 향수">
                                 </a>
                                 <p>키엘 오리지널 머스크 향수</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image4.jpg" alt="올리브 프룻 오일 헤어 마스크">
                                 </a>
                                 <p>올리브 프룻 오일 헤어 마스크</p>
                             </section>
@@ -157,13 +128,13 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image5.jpg" alt="공식몰 혜택">
                                 </a>
                                 <p>공식몰 혜택</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image6.jpg" alt="울트라 훼이셜 크림 프로모션">
                                 </a>
                                 <p>울트라 훼이셜 크림 프로모션</p>
                             </section>
@@ -183,19 +154,19 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image7.jpg" alt="브랜드 히스토리">
                                 </a>
                                 <p>브랜드 히스토리</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image8.jpg" alt="키엘의 환경 캠페인">
                                 </a>
                                 <p>키엘의 환경 캠페인</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image9.jpg" alt="지속 가능성 용어집">
                                 </a>
                                 <p>지속 가능성 용어집</p>
                             </section>
@@ -203,7 +174,6 @@
                     </div>
                 </li>
             </ul>
-
 
             <!-- 헤더우측아이콘들 -->
             <div class="head-icons">
@@ -227,6 +197,49 @@
             </div>
         </div>
     </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <!-- 히어로 배너 -->
+        <div class="hero-banner swiper">
+            <div class="banner-train swiper-wrapper">
+                <div class="swiper-slide"><video src="./vid/hero-video.mp4" autoplay muted loop></video></div>
+                <div class="swiper-slide"><img src="./img/hero2.jpg" alt="2"></div>
+                <div class="swiper-slide"><img src="./img/hero3.jpg" alt="3"></div>
+            </div>
+        </div>
+        <!-- 베스트셀러 -->
+        <div class="best-sellers">
+            <div class="common-frame">
+                <h1 class="main-title">BEST SELLERS</h1>
+                <!-- swiper 추가필요 -->
+            </div>
+        </div>
+
+        <!-- 신상품 -->
+        <div class="new">
+            <h1 class="main-title">NEW</h1>
+            <div class="new-1"></div>
+            <div class="new-2"></div>
+        </div>
+
+        <!-- 프로모션 -->
+        <div class="promotion">
+            <div class="common-frame">
+                <div class="title">
+                    <h1 class="main-title">KIEHL'S OFFICIAL EXCLUSIVE</h1>
+                    <span></span>
+                    <p>공식몰에서만 만날 수 있는 특별한 증정혜택</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>
