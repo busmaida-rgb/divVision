@@ -32,3 +32,10 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+
+button {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}

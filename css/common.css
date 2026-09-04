@@ -84,6 +84,10 @@ h4 {
     font-size: var(--fs-pc-h4);
 }
 
+button {
+    font-family: 'Pretendard', sans-serif;
+}
+
 .common-frame {
     padding: 0 var(--space-3rem);
     height: 100%;
