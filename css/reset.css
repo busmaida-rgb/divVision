@@ -22,6 +22,7 @@ ol {
 img {
     max-width: 100%;
     max-height: 100%;
+    line-height: 0;
 }
 
 table {
@@ -31,4 +32,15 @@ table {
 a {
     color: inherit;
     text-decoration: inherit;
+}
+
+button {
+    background: inherit;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+address {
+    font-style: inherit;
 }

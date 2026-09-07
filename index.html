@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
-    <script defer src="./js/header.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/header.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <title>키엘 - 포트폴리오</title>
 </head>
 
@@ -18,43 +23,12 @@
         <div class="line line1">키엘 신규고객 전 품목 15% 할인</div>
         <div class="line line2">전 구매 고객 여행용 샘플 증정</div>
     </div>
-    <!-- 헤더 -->
+    <!-- 헤더-PC -->
     <header>
         <div class="common-frame">
             <!-- 헤더로고 -->
             <a href="./index.html" class="logo"><img src="./img/logo-black.svg" alt="키엘 홈페이지 바로가기"></a>
             <!-- GNB -->
-            <!-- <ul class="gnb">
-                <li>
-                    <a href="#">NEW</a>
-                </li>
-                <li>
-                    <a href="#">BEST SELLER</a>
-                </li>
-                <li>
-                    <a href="#">SKINCARE</a>
-                    <ul>
-                        <li>
-
-                        </li>
-                        <li>
-
-                        </li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">BODY & HAIR</a>
-                </li>
-                <li>
-                    <a href="#">PROMOTION</a>
-                </li>
-                <li>
-                    <a href="#">ABOUT</a>
-                </li>
-            </ul> -->
-
             <ul class="gnb">
                 <li class="gnb1depth">
                     <a class="gnb1depth-a" href="#">NEW</a>
@@ -90,13 +64,13 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image1.jpg" alt="피부 진단 서비스">
                                 </a>
                                 <p>피부 진단 서비스</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image2.jpg" alt="칼렌듈라 꽃잎 진정 토너">
                                 </a>
                                 <p>칼렌듈라 꽃잎 진정 토너</p>
                             </section>
@@ -127,13 +101,13 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image3.jpg" alt="키엘 오리지널 머스크 향수">
                                 </a>
                                 <p>키엘 오리지널 머스크 향수</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image4.jpg" alt="올리브 프룻 오일 헤어 마스크">
                                 </a>
                                 <p>올리브 프룻 오일 헤어 마스크</p>
                             </section>
@@ -157,13 +131,13 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image5.jpg" alt="공식몰 혜택">
                                 </a>
                                 <p>공식몰 혜택</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image6.jpg" alt="울트라 훼이셜 크림 프로모션">
                                 </a>
                                 <p>울트라 훼이셜 크림 프로모션</p>
                             </section>
@@ -183,19 +157,19 @@
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image7.jpg" alt="브랜드 히스토리">
                                 </a>
                                 <p>브랜드 히스토리</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image8.jpg" alt="키엘의 환경 캠페인">
                                 </a>
                                 <p>키엘의 환경 캠페인</p>
                             </section>
                             <section class="menu-image">
                                 <a class="menu-card" href="#">
-                                    IMAGE PLACEHOLDER
+                                    <img src="./img/gnb-image9.jpg" alt="지속 가능성 용어집">
                                 </a>
                                 <p>지속 가능성 용어집</p>
                             </section>
@@ -203,7 +177,6 @@
                     </div>
                 </li>
             </ul>
-
 
             <!-- 헤더우측아이콘들 -->
             <div class="head-icons">
@@ -227,6 +200,383 @@
             </div>
         </div>
     </header>
+
+    <!-- 메인 컨텐츠 -->
+    <main>
+        <!-- 히어로 배너 -->
+        <div class="hero-banner swiper">
+            <div class="banner-train swiper-wrapper">
+                <a href="#" class="swiper-slide">
+                    <div><video src="./vid/hero-video.mp4" autoplay muted loop></video></div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <div><img src="./img/hero2.jpg" alt="2"></div>
+                </a>
+                <a href="#" class="swiper-slide">
+                    <div><img src="./img/hero3.jpg" alt="3"></div>
+                </a>
+            </div>
+        </div>
+        <!-- 베스트셀러 -->
+        <div class="best-sellers">
+            <div class="common-frame">
+                <h1 class="main-title">BEST SELLERS</h1>
+                <div class="swiper best-seller-products">
+                    <div class="best-train swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-1.png" alt="울트라 훼이셜 크림">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">울트라 훼이셜 크림</a>
+                                <a href="#">24시간 촉촉한 수분 장벽 케어</a>
+                                <a href="#"><span>50</span>ml</a>
+                                <a href="#"><span>49,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-2.png" alt="칼렌듈라 허벌 엑스트랙트 토너">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">칼렌듈라 허벌 엑스트랙트 토너</a>
+                                <a href="#">칼렌듈라 꽃잎을 담은 순한 진정 토너</a>
+                                <a href="#"><span>250</span>ml</a>
+                                <a href="#"><span>64,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-3.png" alt="클리어리 코렉티브 다크 스팟 솔루션">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">클리어리 코렉티브 다크 스팟 솔루션</a>
+                                <a href="#">맑고 균일한 피부톤을 위한 브라이트닝 세럼</a>
+                                <a href="#"><span>50</span>ml</a>
+                                <a href="#"><span>139,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-4.png" alt="미드나잇 리커버리 컨센트레이트">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">미드나잇 리커버리 컨센트레이트</a>
+                                <a href="#">밤사이 피부 컨디션을 회복시키는 나이트 오일</a>
+                                <a href="#"><span>50</span>ml</a>
+                                <a href="#"><span>108,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-5.png" alt="울트라 훼이셜 클렌저">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">울트라 훼이셜 클렌저</a>
+                                <a href="#">피부를 당김 없이 세정하는 순한 보습 클렌저</a>
+                                <a href="#"><span>150</span>ml</a>
+                                <a href="#"><span>39,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-6.png" alt="레어 어스 딥 포어 클렌징 마스크">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">레어 어스 딥 포어 클렌징 마스크</a>
+                                <a href="#">아마존 화이트 클레이로 완성하는 모공 케어</a>
+                                <a href="#"><span>125</span>ml</a>
+                                <a href="#"><span>58,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-7.png" alt="울트라 훼이셜 오버나이트 하이드레이팅 마스크">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">울트라 훼이셜 오버나이트 하이드레이팅 마스크</a>
+                                <a href="#">밤사이 수분을 집중 충전하는 슬리핑 마스크</a>
+                                <a href="#"><span>125</span>ml</a>
+                                <a href="#"><span>52,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-8.png" alt="크리미 아이 트리트먼트 위드 아보카도">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">크리미 아이 트리트먼트 위드 아보카도</a>
+                                <a href="#">아보카도 오일을 담은 촉촉한 아이 케어</a>
+                                <a href="#"><span>14</span>g</a>
+                                <a href="#"><span>63,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-9.png" alt="울트라 라이트 데일리 UV 디펜스">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">울트라 라이트 데일리 UV 디펜스</a>
+                                <a href="#">가볍고 편안한 데일리 자외선 차단 케어</a>
+                                <a href="#"><span>30</span>ml</a>
+                                <a href="#"><span>59,000</span>원</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./img/bs-10.png" alt="울트라 훼이셜 오일-프리 젤 크림">
+                            </a>
+                            <div class="product-desc">
+                                <a href="#">울트라 훼이셜 오일-프리 젤 크림</a>
+                                <a href="#">산뜻하게 수분을 채우는 오일프리 젤 크림</a>
+                                <a href="#"><span>50</span>ml</a>
+                                <a href="#"><span>49,000</span>원</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 신상품 -->
+        <div class="new">
+            <h1 class="main-title">NEW</h1>
+            <div class="new-1">
+                <div class="new1-imgwrap">
+                    <img src="./img/newimg1.jpg" alt="신제품 울트라 훼이셜 메디크림1">
+                    <img src="./img/newimg2.jpg" alt="신제품 울트라 훼이셜 메디크림2">
+                </div>
+                <div class="new1-text ">
+                    <h2>NEW</h2>
+                    <h3>울트라 훼이셜 메디크림</h3>
+                    <p>긴급 진정이 필요한 피부 즉각 진정<br>
+                        손상 장벽 개선 더 빠르게, 더 확실하게</p>
+                    <a href="#">더 알아보기</a>
+                </div>
+            </div>
+            <div class="new-2">
+                <div class="common-frame">
+                    <div class="new2-product">
+                        <div class="product-slide">
+                            <div class="product-train">
+                                <div class="product-cart">
+                                    <h4><span>콜라겐 UV 선세럼</span></h4>
+                                    <p>50ml</p>
+                                    <p><span>69,000원</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <img src="./img/nl-1.png" alt="콜라겐 UV 선세럼">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <a href="#">콜라겐 UV 선세럼</a>
+                            <a href="#">세럼 속에 담은 탱탱 글로우 선케어</a>
+                            <a href="#"><span>50</span>ml</a>
+                            <a href="#"><span>69,000</span>원</a>
+                        </div>
+                    </div>
+                    <div class="new2-product">
+                        <div class="product-slide">
+                            <div class="product-train">
+                                <div class="product-cart">
+                                    <h4><span>레어 어스 모공 마스크</span></h4>
+                                    <p>125ml</p>
+                                    <p><span>65,000원</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <img src="./img/nl-2.png" alt="레어 어스 모공 마스크">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <a href="#">레어 어스 모공 마스크</a>
+                            <a href="#">피지를 부드럽게 제거해주는 클렌징 마스크</a>
+                            <a href="#"><span>125</span>ml</a>
+                            <a href="#"><span>65,000</span>원</a>
+                        </div>
+                    </div>
+                    <div class="new2-product">
+                        <div class="product-slide">
+                            <div class="product-train">
+                                <div class="product-cart">
+                                    <h4><span>울트라 훼이셜 메디크림</span></h4>
+                                    <p>50ml</p>
+                                    <p><span>54,000원</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <img src="./img/nl-3.png" alt="울트라 훼이셜 메디크림">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <a href="#">울트라 훼이셜 메디크림</a>
+                            <a href="#">판테놀 함유 메디크림</a>
+                            <a href="#"><span>50</span>ml</a>
+                            <a href="#"><span>54,000</span>원</a>
+                        </div>
+                    </div>
+                    <div class="new2-product">
+                        <div class="product-slide">
+                            <div class="product-train">
+                                <div class="product-cart">
+                                    <h4><span>울트라 훼이셜 베리어 클렌저</span></h4>
+                                    <p>150ml</p>
+                                    <p><span>46,000원</span></p>
+                                    <button>Add to Cart</button>
+                                </div>
+                                <a href="#">
+                                    <img src="./img/nl-4.png" alt="울트라 훼이셜 베리어 클렌저">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-desc">
+                            <a href="#">울트라 훼이셜 베리어 클렌저</a>
+                            <a href="#">손상 장벽 케어, 3중 딥클렌징</a>
+                            <a href="#"><span>150</span>ml</a>
+                            <a href="#"><span>46,000</span>원</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 프로모션 -->
+        <div class="promotion">
+            <div class="common-frame">
+                <div class="title">
+                    <h1 class="main-title">KIEHL'S OFFICIAL EXCLUSIVE</h1>
+                    <span></span>
+                    <p>공식몰에서만 만날 수 있는 특별한 증정혜택</p>
+                </div>
+                <div class="promotion-frame">
+                    <div class="promotion-content">
+                        <div class="promo-img">
+                            <img src="./img/promo1.png" alt="칼렌듈라 꽃잎 토너 이미지">
+                        </div>
+                        <div class="promo-desc">
+                            <p>CALM & HYDRATE</p>
+                            <p>칼렌듈라 꽃잎 토너 250ml 구매 시<br>
+                                150ml 추가 증정</p>
+                            <img class="promo-prod" src="./img/promo-prod1.png" alt="칼렌듈라 꽃잎 토너 이미지">
+                            <p>민감해진 피부를 편안하게 진정시키고<br>
+                                촉촉한 수분 밸런스를 채워보세요</p>
+                            <a href="#">구매하러 가기</a>
+                        </div>
+                    </div>
+                    <div class="promotion-content">
+                        <div class="promo-desc">
+                            <p>CALM & HYDRATE</p>
+                            <p>칼렌듈라 꽃잎 토너 250ml 구매 시<br>
+                                150ml 추가 증정</p>
+                            <img class="promo-prod" src="./img/promo-prod1.png" alt="칼렌듈라 꽃잎 토너 이미지">
+                            <p>민감해진 피부를 편안하게 진정시키고<br>
+                                촉촉한 수분 밸런스를 채워보세요</p>
+                            <a href="#">구매하러 가기</a>
+                        </div>
+                        <div class="promo-img">
+                            <img src="./img/promo1.png" alt="칼렌듈라 꽃잎 토너 이미지">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="common-frame">
+            <div class="foot-1">
+                <div>
+                    <h4>고객센터</h4>
+                    <ul>
+                        <li>
+                            <img src="./img/clock.svg" alt="고객센터 운영시간">
+                            <div class="cus-time">
+                                <p>10:00 - 17:00</p>
+                                <p>주말 및 공휴일 휴무</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>온라인 단독 혜택</h4>
+                    <ul>
+                        <li><a href="#">공식 온라인 스토어 혜택</a></li>
+                        <li><a href="#">디스커버리  세트</a></li>
+                        <li><a href="#">키엘 웰컴 키트</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>서비스</h4>
+                    <ul>
+                        <li><a href="#">기업구매문의</a></li>
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">배송 & 교환/반품</a></li>
+                        <li><a href="#">배송조회</a></li>
+                        <li><a href="#">매장</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>소셜</h4>
+                    <ul>
+                        <li>
+                            <a href="#" class="sns">
+                                <img src="./img/insta_icon.svg" alt="인스타그램">
+                                <p>인스타그램</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="sns">
+                                <img src="./img/kakao_icon.svg" alt="카카오 채널">
+                                <p>카카오 채널</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-2">
+                <a href="#" class="footlogo">
+                    <img src="./img/logo-black.svg" alt="키엘 홈페이지 바로가기">
+                </a>
+                <div class="footdesc">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <span></span>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="fdescb">
+                        <address>
+                            <ul>
+                                <li>키엘정보</li>
+                                <span></span>
+                                <li>대표: 로드리고 알바로 레벨로 피자로</li>
+                                <span></span>
+                                <li>사업자 등록번호: 220-81-73483</li>
+                                <span></span>
+                                <li>통신판매업신고:2012-서울강남-01663</li>
+                                <span></span>
+                                <li>주소:서울특별시 강남구 영동대로 517 아셈타워 31층</li>
+                            </ul>
+                        </address>
+                        <ul>
+                            <li>고객센터: 080-822-2322</li>
+                            <span></span>
+                            <li>문의: hello@Kiehls.com</li>
+                            <span></span>
+                            <li>마케팅/PR문의: press@Kiehls.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
