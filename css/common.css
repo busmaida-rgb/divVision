@@ -59,6 +59,18 @@
     --gray800: #383A3F;
     --gray900: #17181A;
 
+    /* 베이지 */
+    --beige0:#E6E1CF;
+    --beige100:#E4DBBA;
+    --beige200:#E0D3A5;
+    --beige300:#DBCB92;
+    --beige400:#D3C182;
+    --beige500:#C8B673;
+    --beige600:#BBA865;
+    --beige700:#A99858;
+    --beige800:#95854B;
+    --beige900:#807240;
+
 }
 
 html {
