@@ -216,6 +216,7 @@ header>.common-frame {
         z-index: 1000;
         left: 0;
         width: 100%;
+        height: calc(100% - 9rem);
         top: 9rem;
         background-color: var(--main-color);
     }
@@ -227,10 +228,10 @@ header>.common-frame {
     .smart-gnb1depth {
         width: 100%;
         display: flex;
-        padding: 1rem 2rem;
         align-items: center;
     }
     .smart-gnb1depth-a {
+        padding: 1rem 2rem;
         width: 100%;
     }
     .smart-gnb1depth-a span{
@@ -247,17 +248,30 @@ header>.common-frame {
     }
 
     .smart-mega-menu {
-        padding: 1rem 3rem;
         background-color: var(--beige100);
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: all 0.5s ease 0s;
+        overflow: hidden;
+    }
+    .smart-mega-menu.on{
+        grid-template-rows: 1fr;
+    }
+    .smart-mega-inner{
+        min-height: 0;
+        overflow: hidden;
+    }
+    .smart-menu-column{
+        margin: 1rem 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         gap: 1rem;
+        min-height: 0;
     }
 
     .smart-menu-column ul{
         display: flex;
-        padding: 1rem 1rem;
+        padding: 0 1rem;
         flex-direction: column;
         gap: 1rem;
     }
