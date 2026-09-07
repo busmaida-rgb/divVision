@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* About 페이지 단독 확인을 위한 최소 초기화 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  background: #fff;
+}
+
+.about {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.about__section,
+.about__section picture {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.about__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: contain;
+}
+
+/* PAD: 769px ~ 1024px */
+@media (max-width: 1024px) {
+  .about {
+    max-width: 1024px;
+  }
+}
+
+/* MO: 320px ~ 768px */
+@media (max-width: 768px) {
+  .about {
+    max-width: 768px;
+  }
+}
