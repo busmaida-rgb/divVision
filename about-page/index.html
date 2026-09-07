@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="제공된 어바웃 페이지 디자인을 원본 비율 그대로 구현한 웹페이지입니다."
+    />
+    <title>어바웃 페이지</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="page" aria-label="어바웃 페이지">
+      <div class="artboard" id="artboard" aria-busy="true">
+        <picture class="artboard__picture">
+          <source
+            media="(max-width: 402px)"
+            srcset="./assets/about-page-mo.svg?v=402-final"
+          />
+          <source
+            media="(max-width: 1024px)"
+            srcset="./assets/about-page-pad.svg?v=responsive-final"
+          />
+          <img
+            class="artboard__image"
+            id="about-page-design"
+            src="./assets/about-page.svg?v=responsive-final"
+            width="1920"
+            height="6135"
+            alt="어바웃 페이지 전체 디자인"
+            decoding="async"
+            fetchpriority="high"
+            draggable="false"
+          />
+        </picture>
+        <p class="artboard__error" id="load-error" role="alert" hidden>
+          페이지 이미지를 불러오지 못했습니다.
+        </p>
+      </div>
+    </main>
+
+    <noscript>
+      <p class="noscript-message">
+        이 페이지는 자바스크립트 없이도 표시되지만, 로드 상태 확인 기능은 동작하지 않습니다.
+      </p>
+    </noscript>
+  </body>
+</html>
