@@ -1,9 +1,11 @@
 /* 상단띠배너 */
-.line-banner{
+.line-banner {
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 10;
 }
+
 .line {
     display: flex;
     justify-content: center;
@@ -26,11 +28,12 @@ header {
     height: 5rem;
     width: 100%;
     transition: all 0.3s ease 0s;
-    position: sticky;
+    position: fixed;
     z-index: 100;
     top: 4rem;
 }
-header.on{
+
+header.on {
     background-color: var(--main-color);
 }
 
@@ -41,7 +44,7 @@ header>.common-frame {
 }
 
 /* 헤더로고 */
-header .logo {
+.logo {
     height: 4.375rem;
     line-height: 0;
 }
@@ -51,17 +54,20 @@ header .logo {
     display: flex;
     height: 100%;
 }
+
 .gnb1depth {
-  display: flex;
-  height: 100%;
+    display: flex;
+    height: 100%;
 }
-.gnb1depth-a{
+
+.gnb1depth-a {
     position: relative;
     display: flex;
     align-items: center;
     height: 100%;
     padding: 0 1rem;
 }
+
 .gnb1depth-a::after {
     content: "";
     position: absolute;
@@ -72,13 +78,16 @@ header .logo {
     background: var(--gray900);
     display: none;
 }
-.gnb1depth:hover>.gnb1depth-a{
+
+.gnb1depth:hover>.gnb1depth-a {
     font-weight: var(--fw2);
 }
-.gnb1depth:hover>.gnb1depth-a::after{
+
+.gnb1depth:hover>.gnb1depth-a::after {
     display: block;
 }
-.mega-menu-wrap{
+
+.mega-menu-wrap {
     display: none;
     position: absolute;
     top: 5rem;
@@ -86,11 +95,13 @@ header .logo {
     width: 100%;
     height: auto;
 }
-.mega-1depth:hover>.mega-menu-wrap{
+
+.mega-1depth:hover>.mega-menu-wrap {
     display: block;
     background-color: var(--main-color);
 }
-.mega-menu{
+
+.mega-menu {
     width: 1280px;
     height: auto;
     padding: 1rem 0 2rem 0;
@@ -98,45 +109,160 @@ header .logo {
     display: flex;
     gap: 4rem;
 }
-.mega-menu>section{
+
+.mega-menu>section {
     flex: 1;
 }
-.menu-column{
+
+.menu-column {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.menu-column>p{
+
+.menu-column>p {
     font-weight: var(--fw2);
 }
-.menu-column>a:hover{
+
+.menu-column>a:hover {
     text-decoration: underline;
 }
-.menu-image{
+
+.menu-image {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-.menu-image>p{
+
+.menu-image>p {
     font-weight: var(--fw2);
 }
-.menu-image>a{
+
+.menu-image>a {
     width: 100%;
     height: 11.25rem;
 }
-.menu-image img{
+
+.menu-image img {
     width: 100%;
     object-fit: cover;
 }
 
 
 /* 헤더우측아이콘들 */
-.head-icons>ul{
+.head-icons>ul {
     display: flex;
     gap: 1rem;
     line-height: 0;
 }
 
-.head-icons img{
+.head-icons img {
     height: 1.5rem;
+}
+
+/* 모바일가리기 */
+.header-smart {
+    display: none;
+}
+
+.smart-gnb {
+    display: none;
+}
+
+@media(max-width:1024px) {
+    .header-pc {
+        display: none;
+    }
+
+    .header-smart {
+        display: block;
+        width: 100%;
+        height: 5rem;
+        position: fixed;
+        z-index: 100;
+        top: 4rem;
+    }
+
+    .header-smart.on {
+        background-color: var(--main-color);
+    }
+
+    .header-smart>.common-frame {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu-btn {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+        aspect-ratio: 1/1;
+    }
+
+    .logo {
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* 스마트 GNB */
+    .smart-gnb {
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        width: 100%;
+        top: 9rem;
+        background-color: var(--main-color);
+    }
+
+    .smart-gnbmenu {
+        width: 100%;
+    }
+
+    .smart-gnb1depth {
+        width: 100%;
+        display: flex;
+        padding: 1rem 2rem;
+        align-items: center;
+    }
+    .smart-gnb1depth-a {
+        width: 100%;
+    }
+    .smart-gnb1depth-a span{
+        font-weight: var(--fw2);
+    }
+    .smart-mega-1depth{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .smart-mega-1depth img{
+        width: 20px;
+        aspect-ratio: 1/1;
+    }
+
+    .smart-mega-menu {
+        padding: 1rem 3rem;
+        background-color: var(--beige100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .smart-menu-column ul{
+        display: flex;
+        padding: 1rem 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .smart-menu-column span {
+        font-weight: var(--fw2);
+    }
 }
