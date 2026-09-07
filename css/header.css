@@ -30,7 +30,7 @@ header {
     z-index: 100;
     top: 4rem;
 }
-header:hover{
+header.on{
     background-color: var(--main-color);
 }
 

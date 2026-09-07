@@ -3,7 +3,7 @@ main {
     transform: translateY(-5rem);
     display: flex;
     flex-direction: column;
-    gap: 8rem;
+    gap: 12rem;
 }
 
 /* 메인 타이틀 */
@@ -206,12 +206,10 @@ img {
     text-align: center;
     background-color: var(--main-color);
 }
-.promo-prod{
+
+.promo-prod {
     line-height: 0;
     width: 460px;
     aspect-ratio: 460/360;
 
 }
-
-
-/* 푸터 */
