@@ -80,6 +80,7 @@ footer>.common-frame {
 
 .footdesc ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
@@ -87,4 +88,28 @@ footer>.common-frame {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+}
+
+@media (max-width:1024px) {
+    .foot-1 img {
+        width: 18px;
+    }
+
+    .footdesc {
+        gap: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .foot-1 {
+        display: grid;
+        row-gap: 0.75rem;
+        column-gap: 1rem;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .foot-1 img {
+        width: 14px;
+    }
 }
