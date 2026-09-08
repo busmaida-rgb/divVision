@@ -1,0 +1,426 @@
+/* =========================================
+   혜택 페이지 MAIN
+========================================= */
+
+.benefit-main{
+    width:100%;
+
+    background-color:#fff;
+
+    color:#17181A;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.benefit-hero{
+    width:100%;
+
+    display:flex;
+
+    margin-top: 5rem;
+}
+
+
+/* 왼쪽 이미지 */
+
+.benefit-visual{
+    width:58%;
+
+    overflow:hidden;
+
+    line-height:0;
+}
+
+
+.benefit-visual img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+
+/* 오른쪽 내용 */
+
+.benefit-copy{
+    width:42%;
+
+    display:flex;
+
+    align-items:center;
+
+    background-color:#fff;
+}
+
+
+.benefit-copy-inner{
+    width:100%;
+
+    padding:4rem 4.5rem;
+}
+
+
+.benefit-label{
+    width:max-content;
+
+    padding-bottom:0.65rem;
+
+    border-bottom:1px solid #17181A;
+
+    font-size:0.875rem;
+}
+
+
+.benefit-copy h1{
+    margin-top:2rem;
+
+    font-size:2.7rem;
+
+    font-weight:700;
+
+    line-height:1.25;
+
+    letter-spacing:-0.04em;
+}
+
+
+.benefit-desc{
+    margin-top:2.5rem;
+
+    font-size:1rem;
+
+    line-height:1.7;
+}
+
+
+.benefit-notice{
+    margin-top:1.25rem;
+
+    font-size:0.75rem;
+
+    color:#AEB2B9;
+}
+
+
+/* =========================================
+   BENEFIT POINT
+========================================= */
+
+.benefit-points{
+    width:100%;
+
+    padding:4rem 3rem;
+}
+
+
+.benefit-points ul{
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+}
+
+
+.benefit-points li{
+    min-height:8rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:1rem;
+
+    text-align:center;
+
+    border-right:1px solid #C4C6C9;
+}
+
+
+.benefit-points li:last-child{
+    border-right:0;
+}
+
+
+/* 아이콘 */
+
+.benefit-icon{
+    width:2.5rem;
+    height:2.5rem;
+}
+
+
+.benefit-icon svg{
+    width:100%;
+    height:100%;
+
+    fill:none;
+
+    stroke:#17181A;
+
+    stroke-width:1.8;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+}
+
+
+/* 텍스트 */
+
+.benefit-point-txt{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:0.35rem;
+}
+
+
+.benefit-point-txt strong{
+    font-size:1rem;
+
+    font-weight:700;
+}
+
+
+.benefit-point-txt p{
+    font-size:0.8125rem;
+
+    color:#757981;
+}
+
+
+/* =========================================================
+   PAD
+========================================================= */
+
+@media(max-width:1024px){
+
+    /* HERO */
+
+    .benefit-visual{
+        width:56%;
+    }
+
+
+    .benefit-copy{
+        width:44%;
+    }
+
+
+    .benefit-copy-inner{
+        padding:3rem 2.5rem;
+    }
+
+
+    .benefit-label{
+        font-size:0.8rem;
+    }
+
+
+    .benefit-copy h1{
+        margin-top:1.5rem;
+
+        font-size:2rem;
+    }
+
+
+    .benefit-desc{
+        margin-top:2rem;
+
+        font-size:0.9rem;
+
+        line-height:1.65;
+    }
+
+
+    .benefit-notice{
+        font-size:0.7rem;
+    }
+
+
+    /* POINT */
+
+    .benefit-points{
+        padding:3rem 2rem;
+    }
+
+
+    .benefit-points li{
+        min-height:7rem;
+
+        gap:0.8rem;
+    }
+
+
+    .benefit-icon{
+        width:2.2rem;
+        height:2.2rem;
+    }
+
+
+    .benefit-point-txt strong{
+        font-size:0.9rem;
+    }
+
+
+    .benefit-point-txt p{
+        font-size:0.75rem;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+    /* HERO */
+
+    .benefit-hero{
+        display:block;
+    }
+
+
+    /* 이미지 */
+
+    .benefit-visual{
+        width:100%;
+
+        aspect-ratio:16/9;
+    }
+
+
+    .benefit-visual img{
+        width:100%;
+        height:100%;
+
+        object-fit:cover;
+
+        object-position:center center;
+    }
+
+
+    /* 내용 */
+
+    .benefit-copy{
+        width:100%;
+
+        display:block;
+    }
+
+
+    .benefit-copy-inner{
+        padding:3rem 1.5rem;
+
+        text-align:center;
+    }
+
+
+    .benefit-label{
+        margin:0 auto;
+
+        font-size:0.75rem;
+    }
+
+
+    .benefit-copy h1{
+        margin-top:2rem;
+
+        font-size:2rem;
+
+        line-height:1.25;
+    }
+
+
+    .benefit-desc{
+        margin-top:2rem;
+
+        font-size:0.9rem;
+
+        line-height:1.7;
+    }
+
+
+    .benefit-notice{
+        margin-top:1.25rem;
+
+        font-size:0.65rem;
+    }
+
+
+    /* POINT */
+
+    .benefit-points{
+        padding:0 1.5rem 3rem;
+    }
+
+
+    .benefit-points ul{
+        display:block;
+    }
+
+
+    .benefit-points li{
+        min-height:auto;
+
+        padding:1.5rem 0;
+
+        display:flex;
+
+        flex-direction:row;
+
+        justify-content:flex-start;
+
+        align-items:center;
+
+        gap:1.5rem;
+
+        text-align:left;
+
+        border-right:0;
+
+        border-bottom:1px solid #ddd;
+    }
+
+
+    .benefit-points li:last-child{
+        border-bottom:0;
+    }
+
+
+    .benefit-icon{
+        width:2.5rem;
+        height:2.5rem;
+
+        flex-shrink:0;
+    }
+
+
+    .benefit-point-txt{
+        gap:0.3rem;
+    }
+
+
+    .benefit-point-txt strong{
+        font-size:0.95rem;
+    }
+
+
+    .benefit-point-txt p{
+        font-size:0.75rem;
+    }
+
+}

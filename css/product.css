@@ -1,0 +1,1804 @@
+/* =========================================
+   기본
+========================================= */
+
+*{
+    box-sizing:border-box;
+}
+
+.product-top ul,
+.product-detail ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.product-top button,
+.product-detail button,
+.btn-top{
+    font:inherit;
+}
+
+.product-top figure,
+.product-detail figure{
+    margin:0;
+}
+
+
+
+/* =========================================
+   상단 제품 슬라이드
+========================================= */
+
+.product-top{
+    width:100%;
+    padding:0;
+}
+
+
+.product-slider{
+    width:100%;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+/* 이미지 2개 */
+
+.slide-view{
+    width:100%;
+
+    display:flex;
+}
+
+
+.slide-item{
+    width:50%;
+
+    flex-shrink:0;
+
+    margin:0;
+
+    line-height:0;
+}
+
+
+.slide-item img{
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+
+
+/* =========================================
+   슬라이드 화살표
+========================================= */
+
+.btn-prev,
+.btn-next{
+    width:2rem;
+    height:2rem;
+
+    padding:0;
+
+    border:0;
+
+    border-radius:50%;
+
+    background-color:rgba(255,255,255,0.9);
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    z-index:20;
+}
+
+
+.btn-prev{
+    left:2rem;
+}
+
+.btn-next{
+    left:calc(50% - 2.5rem);
+    right:auto;
+}
+
+
+/* 화살표 */
+
+.btn-prev span,
+.btn-next span{
+    width:0.45rem;
+    height:0.45rem;
+
+    display:block;
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    border-top:1px solid #777;
+    border-right:1px solid #777;
+}
+
+
+.btn-prev span{
+    transform:translate(-40%,-50%) rotate(-135deg);
+}
+
+
+.btn-next span{
+    transform:translate(-60%,-50%) rotate(45deg);
+}
+
+
+
+/* =========================================
+   구매 카드
+========================================= */
+
+.buy-info{
+    width:26rem;
+
+    padding:2rem;
+
+    background-color:rgba(255,255,255,0.95);
+
+    border-radius:0.5rem;
+
+    position:absolute;
+
+    left:75%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:10;
+}
+
+
+
+/* =========================================
+   상품 정보
+========================================= */
+
+.product-name{
+    margin-bottom:1rem;
+}
+
+
+.product-name>span{
+    display:block;
+
+    margin-bottom:0.75rem;
+
+    font-size:0.75rem;
+
+    color:#777;
+}
+
+
+.product-name h1{
+    margin-bottom:0.75rem;
+
+    font-size:1.25rem;
+
+    font-weight:600;
+}
+
+
+.product-name p{
+    font-size:0.75rem;
+
+    line-height:1.5;
+
+    color:#777;
+}
+
+
+.product-price{
+    margin-bottom:2rem;
+
+    font-size:1rem;
+
+    font-weight:600;
+}
+
+
+
+/* =========================================
+   사이즈
+========================================= */
+
+.product-size{
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:1.5rem;
+}
+
+
+.product-size>span{
+    font-size:0.875rem;
+}
+
+
+.size-list{
+    display:flex;
+
+    gap:0.5rem;
+}
+
+
+.size-list li button{
+    width:3rem;
+    height:2.4rem;
+
+    padding:0;
+
+    border:1px solid #ccc;
+
+    background-color:#fff;
+
+    color:#999;
+
+    font-size:0.75rem;
+
+    cursor:pointer;
+}
+
+
+.size-list li.on button{
+    border:1px solid #222;
+
+    color:#222;
+
+    font-weight:600;
+}
+
+
+
+/* =========================================
+   구매 버튼
+========================================= */
+
+.buy-buttons{
+    width:100%;
+
+    display:flex;
+
+    gap:0.75rem;
+}
+
+
+.buy-buttons button{
+    flex:1;
+
+    height:3rem;
+
+    border-radius:0;
+
+    font-size:0.75rem;
+
+    cursor:pointer;
+}
+
+
+.btn-cart{
+    border:1px solid #222;
+
+    background-color:#fff;
+
+    color:#222;
+}
+
+
+.btn-buy{
+    border:1px solid #222;
+
+    background-color:#222;
+
+    color:#fff;
+}
+
+
+
+/* =========================================
+   제품 상세
+========================================= */
+
+.product-detail{
+    padding:0;
+}
+
+
+
+/* =========================================
+   탭
+========================================= */
+
+.tab-menu{
+    width:88%;
+
+    margin:0 auto;
+}
+
+
+.tab-menu ul{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    border-bottom:1px solid #ddd;
+}
+
+
+.tab-menu li{
+    position:relative;
+
+    text-align:center;
+}
+
+
+.tab-menu li button{
+    width:100%;
+    height:4.5rem;
+
+    padding:0;
+
+    border:0;
+
+    background-color:#fff;
+
+    color:#333;
+
+    font-size:0.8rem;
+
+    cursor:pointer;
+}
+
+
+.tab-menu li.on button{
+    font-weight:500;
+}
+
+
+/* 선택된 탭 밑줄 */
+
+.tab-menu li.on::after{
+    content:"";
+
+    width:45%;
+    height:1px;
+
+    background-color:#222;
+
+    position:absolute;
+
+    left:50%;
+    bottom:-1px;
+
+    transform:translateX(-50%);
+}
+
+
+
+/* =========================================
+   탭 내용
+========================================= */
+
+.tab-content{
+    display:none;
+}
+
+
+.tab-content.on{
+    display:block;
+}
+
+
+
+/* =========================================
+   제품설명 이미지
+========================================= */
+
+.detail-img{
+    width:48%;
+
+    margin:4rem auto 6rem;
+
+    line-height:0;
+}
+
+
+.detail-img picture{
+    display:block;
+}
+
+
+.detail-img img{
+    width:100%;
+
+    display:block;
+}
+
+
+
+/* =========================================
+   상품필수정보
+========================================= */
+
+.product-information{
+    width:65%;
+
+    margin:4rem auto 6rem;
+}
+
+
+.product-information dl{
+    display:grid;
+
+    grid-template-columns:12rem 1fr;
+
+    gap:1rem 2rem;
+}
+
+
+.product-information dt{
+    font-weight:600;
+}
+
+
+.product-information dd{
+    color:#666;
+
+    line-height:1.6;
+}
+
+
+
+/* =========================================
+   전성분
+========================================= */
+
+.ingredient{
+    width:65%;
+
+    margin:4rem auto 6rem;
+}
+
+
+.ingredient h4{
+    margin-bottom:1rem;
+
+    font-weight:600;
+}
+
+
+.ingredient p{
+    color:#666;
+
+    line-height:1.7;
+}
+
+
+
+/* =========================================
+   리뷰 전체
+========================================= */
+
+.review-wrap{
+    width:90%;
+
+    margin:3rem auto 7rem;
+
+    background-color:#fff;
+}
+
+
+
+/* =========================================
+   리뷰 평점 요약
+========================================= */
+
+.review-summary{
+    display:flex;
+
+    align-items:center;
+
+    gap:5rem;
+
+    padding:2.5rem 0;
+
+    border-bottom:1px solid #ddd;
+}
+
+
+/* 총점 */
+
+.review-total{
+    width:12rem;
+
+    flex-shrink:0;
+}
+
+
+.review-total strong{
+    display:block;
+
+    font-size:1.5rem;
+
+    font-weight:600;
+}
+
+
+.review-total strong span{
+    color:#f3ad22;
+}
+
+
+.review-total p{
+    margin-top:0.5rem;
+
+    font-size:0.7rem;
+
+    color:#999;
+}
+
+
+
+/* =========================================
+   리뷰 평가 막대
+========================================= */
+
+.review-bars{
+    flex:1;
+}
+
+
+.review-bar{
+    display:grid;
+
+    grid-template-columns:5rem 6rem 1fr 3rem;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin-bottom:1rem;
+}
+
+
+.review-bar:last-child{
+    margin-bottom:0;
+}
+
+
+.review-bar b{
+    padding:0.4rem 0;
+
+    border:1px solid #ccc;
+
+    border-radius:2rem;
+
+    text-align:center;
+
+    font-size:0.7rem;
+}
+
+
+.review-bar>span{
+    font-size:0.7rem;
+}
+
+
+.review-bar em{
+    font-size:0.65rem;
+
+    font-style:normal;
+}
+
+
+/* 막대 */
+
+.bar-line{
+    width:100%;
+
+    height:2px;
+
+    background-color:#ccc;
+}
+
+
+.bar-line i{
+    height:2px;
+
+    display:block;
+
+    background-color:#222;
+}
+
+
+.bar50{
+    width:50%;
+}
+
+
+.bar85{
+    width:85%;
+}
+
+
+
+/* =========================================
+   스토어 PICK
+========================================= */
+
+.store-pick{
+    padding:2rem 0;
+}
+
+
+.store-pick h3{
+    margin-bottom:1rem;
+
+    font-size:1rem;
+
+    font-weight:600;
+}
+
+
+.pick-list{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:1rem;
+}
+
+
+
+/* =========================================
+   PICK 카드
+========================================= */
+
+.pick-list>li{
+    min-height:10rem;
+
+    padding:1rem;
+
+    border:1px solid #ddd;
+
+    border-radius:0.75rem;
+
+    position:relative;
+}
+
+
+
+/* PICK 사용자 */
+
+.pick-user{
+    display:flex;
+
+    align-items:center;
+
+    gap:0.75rem;
+
+    margin-bottom:0.75rem;
+}
+
+
+/* 사용자 기본 프로필 */
+
+.review-avatar{
+    width:4rem;
+    height:4rem;
+
+    background-color:#aeb4bb;
+
+    border-radius:50%;
+
+    position:relative;
+
+    flex-shrink:0;
+}
+
+
+/* 머리 */
+
+.avatar-head{
+    width:1.2rem;
+    height:1.2rem;
+
+    background-color:#fff;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:50%;
+    top:0.8rem;
+
+    transform:translateX(-50%);
+}
+
+
+/* 몸 */
+
+.avatar-body{
+    width:2.3rem;
+    height:1.2rem;
+
+    background-color:#fff;
+
+    border-radius:1.5rem 1.5rem 0.7rem 0.7rem;
+
+    position:absolute;
+
+    left:50%;
+    bottom:0.6rem;
+
+    transform:translateX(-50%);
+}
+
+
+
+/* PICK 프로필 */
+
+.pick-user .review-avatar{
+    width:3rem;
+    height:3rem;
+
+    margin:0;
+}
+
+
+.pick-user .avatar-head{
+    width:0.9rem;
+    height:0.9rem;
+
+    top:0.55rem;
+}
+
+
+.pick-user .avatar-body{
+    width:1.8rem;
+    height:0.9rem;
+
+    bottom:0.4rem;
+}
+
+
+
+.pick-user-info strong{
+    display:block;
+
+    margin-bottom:0.25rem;
+
+    color:#f3ad22;
+
+    font-size:0.9rem;
+}
+
+
+.pick-user-info p{
+    margin:0;
+
+    font-size:0.65rem;
+
+    color:#777;
+}
+
+
+
+/* PICK 리뷰 내용 */
+
+.pick-text{
+    width:62%;
+
+    margin:0;
+
+    font-size:0.7rem;
+
+    line-height:1.5;
+}
+
+
+
+/* PICK 리뷰 사진 */
+
+.pick-list figure{
+    width:30%;
+    height:6rem;
+
+    margin:0;
+
+    position:absolute;
+
+    right:0.5rem;
+    bottom:0.5rem;
+}
+
+
+.pick-list figure img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+
+
+/* =========================================
+   포토 & 동영상
+========================================= */
+
+.photo-review{
+    padding:1rem 0 2rem;
+}
+
+
+.photo-review h3{
+    margin-bottom:1rem;
+
+    font-size:1rem;
+
+    font-weight:600;
+}
+
+
+.photo-list{
+    display:grid;
+
+    grid-template-columns:repeat(8,1fr);
+
+    gap:0.5rem;
+}
+
+
+.photo-list li{
+    height:7rem;
+
+    overflow:hidden;
+}
+
+
+.photo-list img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+
+
+/* 포토 더보기 */
+
+.photo-more button{
+    width:100%;
+    height:100%;
+
+    border:0;
+
+    background-color:#555;
+
+    color:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:0.25rem;
+
+    cursor:pointer;
+}
+
+
+.photo-more button span{
+    display:block;
+}
+
+
+
+/* =========================================
+   일반 리뷰
+========================================= */
+
+.review-list-wrap{
+    padding-top:1rem;
+}
+
+
+.review-list-wrap>h3{
+    margin-bottom:1rem;
+
+    font-size:1rem;
+
+    font-weight:600;
+}
+
+
+
+/* 리뷰 기본 */
+
+.review-list>li{
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+    padding:1.5rem 0;
+
+    border-bottom:1px solid #ddd;
+}
+
+
+
+/* =========================================
+   리뷰 사용자
+========================================= */
+
+.review-user{
+    width:7rem;
+
+    flex-shrink:0;
+
+    text-align:center;
+}
+
+
+.review-user .review-avatar{
+    margin:0 auto 0.5rem;
+}
+
+
+.review-user p{
+    margin:0 0 0.2rem;
+
+    font-size:0.7rem;
+
+    color:#666;
+}
+
+
+.review-user>span{
+    font-size:0.65rem;
+
+    color:#888;
+}
+
+
+
+/* =========================================
+   리뷰 내용
+========================================= */
+
+.review-txt{
+    flex:1;
+
+    min-width:0;
+}
+
+
+.review-score{
+    display:flex;
+
+    align-items:center;
+
+    gap:0.5rem;
+
+    margin-bottom:0.5rem;
+}
+
+
+.review-score span{
+    color:#f3ad22;
+
+    font-size:1rem;
+}
+
+
+.review-score i{
+    font-size:0.7rem;
+
+    font-style:normal;
+}
+
+
+.review-txt h4{
+    margin-bottom:0.6rem;
+
+    font-size:0.9rem;
+
+    font-weight:600;
+}
+
+
+.review-txt>p{
+    margin-bottom:0.6rem;
+
+    font-size:0.75rem;
+
+    line-height:1.5;
+
+    color:#444;
+}
+
+
+
+/* =========================================
+   리뷰 태그
+========================================= */
+
+.review-tag{
+    display:flex;
+
+    gap:0.4rem;
+}
+
+
+.review-tag span{
+    padding:0.25rem 0.75rem;
+
+    background-color:#f3efe3;
+
+    font-size:0.65rem;
+}
+
+
+
+/* =========================================
+   리뷰 이미지
+========================================= */
+
+.review-img{
+    width:10rem;
+    height:7rem;
+
+    flex-shrink:0;
+
+    margin:0;
+
+    overflow:hidden;
+}
+
+
+.review-img img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+
+
+/* =========================================
+   리뷰 4, 5 처음 숨김
+========================================= */
+
+.review-list>li.more-review{
+    display:none;
+}
+
+
+
+/* =========================================
+   리뷰 더보기 클릭 후
+========================================= */
+
+.review-list>li.more-review.on{
+    display:flex;
+}
+
+
+
+/* =========================================
+   리뷰 더보기 버튼
+========================================= */
+
+.review-more{
+    margin-top:2rem;
+}
+
+
+.review-more button{
+    width:22rem;
+    height:3rem;
+
+    margin:0 auto;
+
+    display:block;
+
+    border:1px solid #777;
+
+    background-color:#eee;
+
+    cursor:pointer;
+}
+
+
+
+/* =========================================
+   TOP 버튼
+========================================= */
+
+.btn-top{
+    width:3.5rem;
+    height:3.5rem;
+
+    padding:0;
+
+    border:1px solid #ddd;
+
+    border-radius:50%;
+
+    background-color:#fff;
+
+    color:#222;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:0.2rem;
+
+    position:fixed;
+
+    right:2rem;
+    bottom:2rem;
+
+    z-index:100;
+
+    font-size:0.65rem;
+
+    cursor:pointer;
+}
+
+
+/* TOP 화살표 */
+
+.btn-top span{
+    width:0.45rem;
+    height:0.45rem;
+
+    border-top:1px solid #222;
+    border-left:1px solid #222;
+
+    transform:rotate(45deg);
+}
+
+
+
+/* =========================================================
+   PAD
+========================================================= */
+
+@media(max-width:1024px){
+
+
+    /* 구매카드 */
+
+    .buy-info{
+        width:42%;
+
+        padding:1.5rem;
+    }
+
+
+    .product-name h1{
+        font-size:1rem;
+    }
+
+
+    .product-name p{
+        font-size:0.7rem;
+    }
+
+
+    .product-price{
+        margin-bottom:1.5rem;
+    }
+
+
+
+    /* 탭 */
+
+    .tab-menu li button{
+        height:4rem;
+
+        font-size:0.75rem;
+    }
+
+
+    .tab-menu li.on::after{
+        width:42%;
+    }
+
+
+
+    /* 상세 */
+
+    .detail-img{
+        width:55%;
+
+        margin:3rem auto 5rem;
+    }
+
+
+
+    /* 상품정보 */
+
+    .product-information,
+    .ingredient{
+        width:75%;
+    }
+
+
+
+    /* 리뷰 */
+
+    .review-wrap{
+        width:90%;
+    }
+
+
+
+    /* 평점 */
+
+    .review-summary{
+        gap:2rem;
+    }
+
+
+    .review-total{
+        width:8rem;
+    }
+
+
+    .review-bar{
+        grid-template-columns:4.5rem 5rem 1fr 2.5rem;
+
+        gap:0.75rem;
+    }
+
+
+
+    /* PICK */
+
+    .pick-list>li{
+        min-height:9rem;
+    }
+
+
+
+    /* 포토 */
+
+    .photo-list li{
+        height:6rem;
+    }
+
+
+
+    /* 일반 리뷰 */
+
+    .review-list>li{
+        gap:1.25rem;
+    }
+
+
+    .review-user{
+        width:5.5rem;
+    }
+
+
+    .review-user .review-avatar{
+        width:3.5rem;
+        height:3.5rem;
+    }
+
+
+    .review-user .avatar-head{
+        width:1rem;
+        height:1rem;
+
+        top:0.7rem;
+    }
+
+
+    .review-user .avatar-body{
+        width:2rem;
+        height:1rem;
+
+        bottom:0.5rem;
+    }
+
+
+    .review-img{
+        width:8rem;
+        height:6rem;
+    }
+
+
+    /* 숨긴 리뷰 */
+
+    .review-list>li.more-review{
+        display:none;
+    }
+
+
+    .review-list>li.more-review.on{
+        display:flex;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:768px){
+
+
+    /* =====================================
+       상단 슬라이드
+    ===================================== */
+
+    .slide-view{
+        width:100%;
+    }
+
+
+    /* 모바일에서는 왼쪽 이미지 한 장만 표시 */
+
+    .slide-left{
+        width:100%;
+    }
+
+
+    .slide-right{
+        display:none;
+    }
+
+
+    .slide-item img{
+        width:100%;
+        height:auto;
+
+        object-fit:cover;
+    }
+
+
+
+    /* 화살표 */
+
+    .btn-prev,
+    .btn-next{
+        width:1.7rem;
+        height:1.7rem;
+    }
+
+
+     .btn-prev{
+        left:1rem;
+    }
+
+    .btn-next{
+        left:auto;
+        right:1rem;
+    }
+
+
+
+    /* =====================================
+       구매정보
+    ===================================== */
+
+    .buy-info{
+        width:auto;
+
+        padding:1.5rem 1rem 2rem;
+
+        position:initial;
+
+        transform:none;
+
+        background-color:#fff;
+
+        border-radius:0;
+    }
+
+
+    .product-name h1{
+        font-size:1rem;
+    }
+
+
+    .product-name p{
+        font-size:0.7rem;
+    }
+
+
+    .product-price{
+        margin-bottom:1.25rem;
+    }
+
+
+
+    /* 사이즈 */
+
+    .size-list li button{
+        width:2.75rem;
+        height:2rem;
+
+        font-size:0.65rem;
+    }
+
+
+
+    /* 구매 버튼 */
+
+    .buy-buttons{
+        gap:0.5rem;
+    }
+
+
+    .buy-buttons button{
+        height:2.5rem;
+
+        font-size:0.7rem;
+    }
+
+
+
+    /* =====================================
+       탭
+    ===================================== */
+
+    .tab-menu{
+        width:calc(100% - 2rem);
+    }
+
+
+    .tab-menu li button{
+        height:3.5rem;
+
+        font-size:0.65rem;
+    }
+
+
+    .tab-menu li.on::after{
+        width:55%;
+    }
+
+
+
+    /* =====================================
+       제품설명
+    ===================================== */
+
+    .detail-img{
+        width:100%;
+
+        margin:2rem auto 4rem;
+    }
+
+
+
+    /* =====================================
+       상품정보
+    ===================================== */
+
+    .product-information,
+    .ingredient{
+        width:calc(100% - 2rem);
+
+        margin:3rem auto 5rem;
+    }
+
+
+    .product-information dl{
+        grid-template-columns:7rem 1fr;
+
+        gap:1rem;
+    }
+
+
+
+    /* =====================================
+       리뷰 전체
+    ===================================== */
+
+    .review-wrap{
+        width:calc(100% - 2rem);
+
+        margin:2rem auto 4rem;
+    }
+
+
+
+    /* =====================================
+       평점 요약
+    ===================================== */
+
+    .review-summary{
+        display:block;
+
+        padding:1.5rem 0;
+    }
+
+
+    .review-total{
+        width:100%;
+
+        margin-bottom:1.5rem;
+    }
+
+
+    .review-total strong{
+        font-size:1.3rem;
+    }
+
+
+    .review-bar{
+        grid-template-columns:4rem 4rem 1fr 2rem;
+
+        gap:0.5rem;
+    }
+
+
+    .review-bar b{
+        font-size:0.6rem;
+    }
+
+
+    .review-bar>span,
+    .review-bar em{
+        font-size:0.6rem;
+    }
+
+
+
+    /* =====================================
+       스토어 PICK
+    ===================================== */
+
+    .pick-list{
+        display:flex;
+
+        overflow-x:auto;
+
+        gap:0.75rem;
+    }
+
+
+    .pick-list>li{
+        min-width:17rem;
+
+        min-height:9rem;
+    }
+
+
+
+    /* =====================================
+       포토
+    ===================================== */
+
+    .photo-list{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+
+    .photo-list li{
+        height:5rem;
+    }
+
+
+
+        /* =====================================
+       모바일 일반 리뷰
+    ===================================== */
+
+    .review-list>li{
+        display:flex;
+
+        flex-wrap:wrap;
+
+        align-items:flex-start;
+
+        gap:0.5rem;
+
+        padding:1rem 0;
+    }
+
+
+    /* 사용자 */
+
+    .review-user{
+        width:4rem;
+
+        flex-shrink:0;
+    }
+
+
+    .review-user .review-avatar{
+        width:3rem;
+        height:3rem;
+    }
+
+
+    .review-user .avatar-head{
+        width:0.9rem;
+        height:0.9rem;
+
+        top:0.55rem;
+    }
+
+
+    .review-user .avatar-body{
+        width:1.8rem;
+        height:0.9rem;
+
+        bottom:0.4rem;
+    }
+
+
+    .review-user p{
+        font-size:0.55rem;
+    }
+
+
+    .review-user>span{
+        font-size:0.55rem;
+    }
+
+
+    /* 리뷰 내용 */
+
+    .review-txt{
+        width:calc(100% - 4.5rem);
+
+        flex:none;
+
+        min-width:0;
+    }
+
+
+    .review-score{
+        gap:0.25rem;
+    }
+
+
+    .review-score span{
+        font-size:0.8rem;
+    }
+
+
+    .review-score i{
+        font-size:0.55rem;
+    }
+
+
+    .review-txt h4{
+        font-size:0.7rem;
+    }
+
+
+    .review-txt>p{
+        display:block;
+
+        font-size:0.65rem;
+
+        line-height:1.5;
+    }
+
+
+    /* 태그 */
+
+    .review-tag{
+        display:flex;
+
+        gap:0.25rem;
+    }
+
+
+    .review-tag span{
+        flex:none;
+
+        padding:0.25rem 0.5rem;
+
+        font-size:0.55rem;
+    }
+
+
+    /* =====================================
+       리뷰 사진 아래로
+    ===================================== */
+
+    .review-img{
+        width:calc(100% - 4.5rem);
+        height:auto;
+
+        margin-left:4.5rem;
+
+        flex-shrink:0;
+    }
+
+
+    .review-img img{
+        width:100%;
+        height:auto;
+
+        display:block;
+
+        object-fit:cover;
+    }
+
+
+    /* 4, 5번 리뷰 */
+
+    .review-list>li.more-review{
+        display:none;
+    }
+
+
+    .review-list>li.more-review.on{
+        display:flex;
+
+        flex-wrap:wrap;
+    }
+
+
+    /* 리뷰 더보기 */
+
+    .review-more button{
+        width:100%;
+    }
+
+}
+
+
+
+    /* =====================================
+       TOP
+    ===================================== */
+
+    .btn-top{
+        width:3rem;
+        height:3rem;
+
+        right:1rem;
+        bottom:1rem;
+
+        font-size:0.6rem;
+    }
+
+}
