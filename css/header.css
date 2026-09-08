@@ -181,6 +181,7 @@ header>.common-frame {
         position: fixed;
         z-index: 100;
         top: 4rem;
+        transition: all 0.5s ease 0s;
     }
 
     .header-smart.on {
@@ -216,10 +217,24 @@ header>.common-frame {
         z-index: 1000;
         left: 0;
         width: 100%;
-        height: calc(100% - 9rem);
+        height: calc(100dvh - 9rem);
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
         top: 9rem;
         background-color: var(--main-color);
+        transition: all 0.5s ease 0s;
+        transform: translateX(-100%);
     }
+
+    .smart-gnb.on {
+        transform: translateX(0);
+    }
+
+    /* 스크롤막기 */
+    html:has(.smart-gnb.on) {
+        overflow: hidden;
+    }
+    /*  */
 
     .smart-gnbmenu {
         width: 100%;
@@ -230,19 +245,30 @@ header>.common-frame {
         display: flex;
         align-items: center;
     }
+
     .smart-gnb1depth-a {
         padding: 1rem 2rem;
         width: 100%;
     }
-    .smart-gnb1depth-a span{
+
+    .smart-gnb1depth-a span {
         font-weight: var(--fw2);
     }
-    .smart-mega-1depth{
+
+    .smart-gnb1depth-a img {
+        transition: all 0.5s ease 0s;
+    }
+    .smart-gnb1depth-a img.on{
+        transform: rotate(180deg);
+    }
+
+    .smart-mega-1depth {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .smart-mega-1depth img{
+
+    .smart-mega-1depth img {
         width: 20px;
         aspect-ratio: 1/1;
     }
@@ -254,14 +280,17 @@ header>.common-frame {
         transition: all 0.5s ease 0s;
         overflow: hidden;
     }
-    .smart-mega-menu.on{
+
+    .smart-mega-menu.on {
         grid-template-rows: 1fr;
     }
-    .smart-mega-inner{
+
+    .smart-mega-inner {
         min-height: 0;
         overflow: hidden;
     }
-    .smart-menu-column{
+
+    .smart-menu-column {
         margin: 1rem 2rem;
         display: flex;
         flex-direction: column;
@@ -269,7 +298,7 @@ header>.common-frame {
         min-height: 0;
     }
 
-    .smart-menu-column ul{
+    .smart-menu-column ul {
         display: flex;
         padding: 0 1rem;
         flex-direction: column;
@@ -278,5 +307,11 @@ header>.common-frame {
 
     .smart-menu-column span {
         font-weight: var(--fw2);
+    }
+}
+
+@media(max-width:768px) {
+    .smart-gnb1depth-a {
+        padding: 1rem 1rem;
     }
 }
