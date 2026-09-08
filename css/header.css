@@ -3,7 +3,7 @@
     position: sticky;
     width: 100%;
     top: 0;
-    z-index: 10;
+    z-index: 100;
 }
 
 .line {
@@ -29,7 +29,7 @@ header {
     width: 100%;
     transition: all 0.3s ease 0s;
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     top: 4rem;
 }
 
