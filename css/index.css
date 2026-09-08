@@ -200,19 +200,6 @@ main {
     gap: 1rem;
 }
 
-.product-slide {
-    aspect-ratio: 107/161;
-    overflow: hidden;
-}
-
-.product-train {
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    transform: translateY(-16rem);
-    transition: all 0.5s ease 0s;
-}
-
 @media (hover: hover) and (pointer: fine) {
     .product-slide:hover>.product-train {
         transform: translateY(0);

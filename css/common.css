@@ -105,6 +105,19 @@ button {
     height: 100%;
 }
 
+.product-slide {
+    aspect-ratio: 107/161;
+    overflow: hidden;
+}
+
+.product-train {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    transform: translateY(-16rem);
+    transition: all 0.5s ease 0s;
+}
+
 
 @media (max-width:1024px) {
     html {
