@@ -1,5 +1,7 @@
 const heroBanner = new Swiper('.hero-banner', {
   loop: true,
+  preventClicks: true,
+  preventClicksPropagation: true,
   autoplay: {
     delay: 6000,
   },
