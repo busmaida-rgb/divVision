@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오 로그인</title>
+
+    <link rel="stylesheet" href="./css/kakao-login.css">
+</head>
+
+<body>
+
+    <main class="kakao-login">
+
+        <h1>kakao</h1>
+
+        <section class="kakao-login-box">
+
+            <form class="kakao-form">
+
+                <label class="blind" for="kakao-id">
+                    카카오메일 아이디, 이메일, 전화번호
+                </label>
+
+                <input
+                    type="text"
+                    id="kakao-id"
+                    placeholder="카카오메일 아이디, 이메일, 전화번호"
+                >
+
+                <label class="blind" for="kakao-pw">
+                    비밀번호
+                </label>
+
+                <input
+                    type="password"
+                    id="kakao-pw"
+                    placeholder="비밀번호"
+                >
+
+                <div class="save-login">
+                    <button type="button" class="btn-check"></button>
+                    <span>간편로그인 정보 저장</span>
+                    <button type="button" class="btn-info">i</button>
+                </div>
+
+                <button type="button" class="btn-kakao-login">
+                    로그인
+                </button>
+
+            </form>
+
+            <div class="login-or">
+                <span></span>
+                <p>또는</p>
+                <span></span>
+            </div>
+
+            <button type="button" class="btn-qr">
+                QR코드 로그인
+            </button>
+
+            <div class="kakao-links">
+
+                <a href="#">
+                    회원가입
+                </a>
+
+                <div>
+                    <a href="#">
+                        계정 찾기
+                    </a>
+
+                    <span>|</span>
+
+                    <a href="#">
+                        비밀번호 찾기
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="kakao-footer">
+            <a href="#">한국어⌄</a>
+            <span>|</span>
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보 처리방침</a>
+            <span>|</span>
+            <a href="#">고객센터</a>
+            <span>© Kakao Corp.</span>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
