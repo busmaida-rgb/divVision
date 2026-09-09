@@ -78,6 +78,7 @@ html {
     font-weight: var(--fw1);
     font-family: 'Pretendard', sans-serif;
     color: var(--gray900);
+    background-color: #F9F7EF;
 }
 
 h1 {
@@ -121,7 +122,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 6rem;
-    transform: translateY(-16rem);
+    transform: translateY(-18rem);
     transition: all 0.5s ease 0s;
 }
 
@@ -151,6 +152,10 @@ button {
 }
 
 .product-cart span {
+    display: block;
+    min-height: 2lh;
+    text-align: center;
+    word-break: keep-all;
     font-weight: var(--fw2);
 }
 

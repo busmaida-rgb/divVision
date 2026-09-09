@@ -1,8 +1,61 @@
-.product-banner{
+.product-banner {
     margin-top: 5rem;
-    /* background:url(../); */
+    width: 100dvw;
+    aspect-ratio: 1920/700;
+    background: url(../img/bestseller/bestbanner-pc.jpg) no-repeat 50% 50% / cover;
 }
+
 .product-grid>.common-frame {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 6rem 12rem;
+    row-gap: 12rem;
+    column-gap: 12rem;
+}
+
+.grid-smart {
+    display: none;
+}
+
+@media (max-width:1400px) {
+    .product-grid>.common-frame {
+        padding: 6rem 6rem;
+        row-gap: 9rem;
+        column-gap: 9rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .grid-pc {
+        display: none;
+    }
+
+    .grid-smart {
+        display: block;
+    }
+
+    .product-banner {
+        aspect-ratio: 1024/700;
+        background: url(../img/bestseller/bestbanner-pad.jpg) no-repeat 50% 50% / cover;
+    }
+
+    .product-grid>.common-frame {
+        padding: 6rem 4rem;
+        row-gap: 9rem;
+        column-gap: 9rem;
+    }
+}
+
+@media (max-width:768px) {
+    .product-banner {
+        aspect-ratio: 402/500;
+        background: url(../img/bestseller/bestbanner-mo.jpg) no-repeat 50% 50% / cover;
+    }
+
+    .product-grid>.common-frame {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 1rem;
+        row-gap: 4rem;
+        column-gap: 3rem;
+    }
 }
