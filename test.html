@@ -2,23 +2,36 @@
 <html lang="ko">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KIEHL'S SKIN FINDER</title>
+
+
+    <!-- 기존 공통 CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/header.css">
+   <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- 테스트 페이지 -->
+    <link rel="stylesheet" href="./css/test.css">
+
+
+    <!-- 테스트 JS -->
+    <script src="./js/test.js" defer></script>
     <script src="./js/header.js" defer></script>
     <script src="./js/swiper.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <title>Kiehl's - 포트폴리오</title>
+
 </head>
 
+
 <body>
-    <!-- 상단 띠배너 -->
+
+     <!-- 상단 띠배너 -->
     <div class="line-banner">
         <div class="line line1">키엘 신규고객 전 품목 15% 할인</div>
         <div class="line line2">전 구매 고객 여행용 샘플 증정</div>
@@ -357,388 +370,674 @@
             </div>
         </li>
     </ul>
-    <!-- 메인 컨텐츠 -->
-    <main>
-        <!-- 히어로 배너 -->
-        <div class="hero-banner swiper">
-            <div class="banner-train swiper-wrapper">
-                <a href="#" class="swiper-slide" draggable="false">
-                    <div class="slide-contents"><video src="./vid/hero-up.mp4" autoplay muted loop></video></div>
-                </a>
-                <a href="#" class="swiper-slide" draggable="false">
-                    <div class="slide-contents">
-                        <div class="slide-contents">
-                            <picture>
-                                <!-- 모바일 -->
-                                <source media="(max-width: 768px)" srcset="./img/hero2-mo.jpg">
 
-                                <!-- 태블릿 -->
-                                <source media="(max-width: 1024px)" srcset="./img/hero2-pad.jpg">
+        <!-- =====================================
+             시작 화면
+        ====================================== -->
 
-                                <!-- PC 및 기본 이미지 -->
-                                <img src="./img/hero2.jpg" alt="속탄력 투명 에센스">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="slide-desc">
-                        <div>
-                            <img src="./img/herosimage1.jpg" alt="속탄력 투명 에센스">
-                        </div>
-                        <div class="slide-desc-desc">
-                            <div class="slide-desc-name">
-                                <span>스킨케어</span>
-                                <h4>속탄력 투명 에센스</h4>
-                            </div>
-                            <div class="slide-desc-price">
-                                &#8361;136,000
-                            </div>
-                            <span>사이즈 50ml</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="swiper-slide" draggable="false">
-                    <div class="slide-contents">
-                        <div class="slide-contents">
-                            <picture>
-                                <!-- 모바일 -->
-                                <source media="(max-width: 768px)" srcset="./img/hero3-mo.jpg">
+        <section class="test-start on">
 
-                                <!-- 태블릿 -->
-                                <source media="(max-width: 1024px)" srcset="./img/hero3-pad.jpg">
 
-                                <!-- PC 및 기본 이미지 -->
-                                <img src="./img/hero3.jpg" alt="오리지널 머스크 향수">
-                            </picture>
-                        </div>
-                        <img src="./img/hero3.jpg" alt="오리지널 머스크 향수">
-                    </div>
-                    <div class="slide-desc">
-                        <div><img src="./img/herosimage2.jpg" alt="오리지널 머스크 향수"></div>
-                        <div class="slide-desc-desc">
-                            <div class="slide-desc-name">
-                                <span>퍼퓸</span>
-                                <h4>오리지널 머스크 향수</h4>
-                            </div>
-                            <div class="slide-desc-price">
-                                &#8361;96,000
-                            </div>
-                            <span>사이즈 50ml</span>
-                        </div>
-                    </div>
-                </a>
+            <div class="start-small">
+                KIEHL'S SKIN FINDER
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <!-- 베스트셀러 -->
-        <div class="best-sellers">
-            <div class="common-frame">
-                <h1 class="main-title">BEST SELLERS</h1>
-                <div class="swiper best-seller-products">
-                    <div class="best-train swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-1.png" alt="울트라 훼이셜 크림">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">울트라 훼이셜 크림</a>
-                                <a href="#">24시간 촉촉한 수분 장벽 케어</a>
-                                <a href="#"><span>50</span>ml</a>
-                                <a href="#"><span>49,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="./product.html">
-                                <img src="./img/bs-2.png" alt="칼렌듈라 허벌 엑스트랙트 토너">
-                            </a>
-                            <div class="product-desc">
-                                <a href="./product.html">칼렌듈라 허벌 엑스트랙트 토너</a>
-                                <a href="./product.html">칼렌듈라 꽃잎을 담은 순한 진정 토너</a>
-                                <a href="./product.html"><span>250</span>ml</a>
-                                <a href="./product.html"><span>64,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-3.png" alt="클리어리 코렉티브 다크 스팟 솔루션">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">클리어리 코렉티브 다크 스팟 솔루션</a>
-                                <a href="#">맑고 균일한 피부톤을 위한 브라이트닝 세럼</a>
-                                <a href="#"><span>50</span>ml</a>
-                                <a href="#"><span>139,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-4.png" alt="미드나잇 리커버리 컨센트레이트">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">미드나잇 리커버리 컨센트레이트</a>
-                                <a href="#">밤사이 피부 컨디션을 회복시키는 나이트 오일</a>
-                                <a href="#"><span>50</span>ml</a>
-                                <a href="#"><span>108,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-5.png" alt="울트라 훼이셜 클렌저">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">울트라 훼이셜 클렌저</a>
-                                <a href="#">피부를 당김 없이 세정하는 순한 보습 클렌저</a>
-                                <a href="#"><span>150</span>ml</a>
-                                <a href="#"><span>39,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-6.png" alt="레어 어스 딥 포어 클렌징 마스크">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">레어 어스 딥 포어 클렌징 마스크</a>
-                                <a href="#">아마존 화이트 클레이로 완성하는 모공 케어</a>
-                                <a href="#"><span>125</span>ml</a>
-                                <a href="#"><span>58,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-7.png" alt="울트라 훼이셜 오버나이트 하이드레이팅 마스크">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">울트라 훼이셜 오버나이트 하이드레이팅 마스크</a>
-                                <a href="#">밤사이 수분을 집중 충전하는 슬리핑 마스크</a>
-                                <a href="#"><span>125</span>ml</a>
-                                <a href="#"><span>52,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-8.png" alt="크리미 아이 트리트먼트 위드 아보카도">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">크리미 아이 트리트먼트 위드 아보카도</a>
-                                <a href="#">아보카도 오일을 담은 촉촉한 아이 케어</a>
-                                <a href="#"><span>14</span>g</a>
-                                <a href="#"><span>63,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-9.png" alt="울트라 라이트 데일리 UV 디펜스">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">울트라 라이트 데일리 UV 디펜스</a>
-                                <a href="#">가볍고 편안한 데일리 자외선 차단 케어</a>
-                                <a href="#"><span>30</span>ml</a>
-                                <a href="#"><span>59,000</span>원</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <img src="./img/bs-10.png" alt="울트라 훼이셜 오일-프리 젤 크림">
-                            </a>
-                            <div class="product-desc">
-                                <a href="#">울트라 훼이셜 오일-프리 젤 크림</a>
-                                <a href="#">산뜻하게 수분을 채우는 오일프리 젤 크림</a>
-                                <a href="#"><span>50</span>ml</a>
-                                <a href="#"><span>49,000</span>원</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- 신상품 -->
-        <div class="new">
-            <h1 class="main-title">NEW</h1>
-            <div class="new-1">
-                <div class="new1-imgwrap">
-                    <img src="./img/newimg1-2.jpg" alt="신제품 울트라 훼이셜 메디크림1">
-                    <img src="./img/newimg2.jpg" alt="신제품 울트라 훼이셜 메디크림2">
-                </div>
-                <div class="new1-text ">
-                    <h2>NEW</h2>
-                    <h3>울트라 훼이셜 메디크림</h3>
-                    <p>긴급 진정이 필요한 피부 즉각 진정<br>
-                        손상 장벽 개선 더 빠르게, 더 확실하게</p>
-                    <a href="#">더 알아보기</a>
-                </div>
-            </div>
-            <div class="new-2">
-                <div class="common-frame">
-                    <div class="product">
-                        <div class="product-slide">
-                            <div class="product-train">
-                                <div class="product-cart">
-                                    <h4><span>콜라겐 UV 선세럼</span></h4>
-                                    <p>50ml</p>
-                                    <p><span>69,000원</span></p>
-                                    <button>Add to Cart</button>
-                                </div>
-                                <a href="#">
-                                    <img src="./img/nl-1.png" alt="콜라겐 UV 선세럼">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#">콜라겐 UV 선세럼</a>
-                            <a href="#">세럼 속에 담은 탱탱 글로우 선케어</a>
-                            <a href="#"><span>50</span>ml</a>
-                            <a href="#"><span>69,000</span>원</a>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-slide">
-                            <div class="product-train">
-                                <div class="product-cart">
-                                    <h4><span>레어 어스 모공 마스크</span></h4>
-                                    <p>125ml</p>
-                                    <p><span>65,000원</span></p>
-                                    <button>Add to Cart</button>
-                                </div>
-                                <a href="#">
-                                    <img src="./img/nl-2.png" alt="레어 어스 모공 마스크">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#">레어 어스 모공 마스크</a>
-                            <a href="#">피지를 부드럽게 제거해주는 클렌징 마스크</a>
-                            <a href="#"><span>125</span>ml</a>
-                            <a href="#"><span>65,000</span>원</a>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-slide">
-                            <div class="product-train">
-                                <div class="product-cart">
-                                    <h4><span>울트라 훼이셜 메디크림</span></h4>
-                                    <p>50ml</p>
-                                    <p><span>54,000원</span></p>
-                                    <button>Add to Cart</button>
-                                </div>
-                                <a href="#">
-                                    <img src="./img/nl-3.png" alt="울트라 훼이셜 메디크림">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#">울트라 훼이셜 메디크림</a>
-                            <a href="#">판테놀 함유 메디크림</a>
-                            <a href="#"><span>50</span>ml</a>
-                            <a href="#"><span>54,000</span>원</a>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product-slide">
-                            <div class="product-train">
-                                <div class="product-cart">
-                                    <h4><span>울트라 훼이셜 베리어 클렌저</span></h4>
-                                    <p>150ml</p>
-                                    <p><span>46,000원</span></p>
-                                    <button>Add to Cart</button>
-                                </div>
-                                <a href="#">
-                                    <img src="./img/nl-4.png" alt="울트라 훼이셜 베리어 클렌저">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-desc">
-                            <a href="#">울트라 훼이셜 베리어 클렌저</a>
-                            <a href="#">손상 장벽 케어, 3중 딥클렌징</a>
-                            <a href="#"><span>150</span>ml</a>
-                            <a href="#"><span>46,000</span>원</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- 프로모션 -->
-        <div class="promotion">
-            <div class="common-frame">
-                <div class="title">
-                    <h1 class="main-title">KIEHL'S OFFICIAL EXCLUSIVE</h1>
+            <h1>
+                지금 내 피부에 필요한<br>
+                키엘을 찾아보세요.
+            </h1>
+
+
+            <p class="start-desc">
+
+                간단한 5가지 질문을 통해<br>
+
+                현재 피부 상태와 고민에 맞는<br>
+
+                키엘 스킨케어를 추천해드립니다.
+
+            </p>
+
+
+            <button type="button" class="btn-start">
+                테스트 시작하기
+            </button>
+
+
+            <p class="start-notice">
+
+                약 1분 정도 소요됩니다.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             질문 화면
+        ====================================== -->
+
+        <section class="test-question">
+
+
+            <!-- 진행상황 -->
+
+            <div class="test-progress">
+
+                <div class="progress-top">
+
+                    <span class="question-number">
+                        01 / 05
+                    </span>
+
+                    <span>
+                        SKIN FINDER
+                    </span>
+
+                </div>
+
+
+                <div class="progress-line">
+
                     <span></span>
-                    <p>공식몰에서만 만날 수 있는 특별한 증정혜택</p>
+
                 </div>
-                <div class="promotion-frame">
-                    <div class="promotion-content">
-                        <div class="promo-img">
-                            <img src="./img/promo1.png" alt="칼렌듈라 꽃잎 토너 이미지">
-                        </div>
-                        <div class="promo-desc">
-                            <p>CALM & HYDRATE</p>
-                            <p>칼렌듈라 꽃잎 토너 250ml 구매 시<br>
-                                <b>150ml 추가 증정</b>
-                            </p>
-                            <img class="promo-prod" src="./img/promotion-main/promotion-pc-toner.png"
-                                alt="칼렌듈라 꽃잎 토너 이미지">
-                            <p>민감해진 피부를 편안하게 진정시키고<br>
-                                촉촉한 수분 밸런스를 채워보세요</p>
-                            <a href="#">구매하러 가기</a>
-                        </div>
-                    </div>
-                    <div class="promotion-content">
-                        <div class="promo-desc">
-                            <p>CLEAR & BRIGHT</p>
-                            <p>결광 프리 에센스 50ml 구매 시<br>
-                                <b>15ml 추가 증정</b>
-                            </p>
-                            <img class="promo-prod" src="./img/promotion-main/promotion-pc-ample.png"
-                                alt="결광 프리 에센스 이미지">
-                            <p>칙칙함과 잡티 흔적을 케어해<br>
-                                맑고 균일한 피부로 만들어보세요</p>
-                            <a href="#">구매하러 가기</a>
-                        </div>
-                        <div class="promo-img">
-                            <img src="./img/promo2.png" alt="결광 프리 에센스 이미지">
-                        </div>
-                    </div>
-                </div>
-                <!-- 모바일전용 -->
-                <div class="promotion-frame-mo">
-                    <div class="promotion-content">
-                        <div class="promo-img">
-                            <img src="./img/promo1.png" alt="칼렌듈라 꽃잎 토너 이미지">
-                        </div>
-                        <div class="promo-desc">
-                            <p>CALM & HYDRATE</p>
-                            <p>칼렌듈라 꽃잎 토너 250ml 구매 시<br>
-                                <b>150ml 추가 증정</b>
-                            </p>
-                            <img class="promo-prod" src="./img/promotion-main/promotion-pc-toner.png"
-                                alt="칼렌듈라 꽃잎 토너 이미지">
-                            <p>민감해진 피부를 편안하게 진정시키고<br>
-                                촉촉한 수분 밸런스를 채워보세요</p>
-                            <a href="#">구매하러 가기</a>
-                        </div>
-                    </div>
-                    <div class="promotion-content">
-                        <div class="promo-img">
-                            <img src="./img/promo2.png" alt="결광 프리 에센스 이미지">
-                        </div>
-                        <div class="promo-desc">
-                            <p>CLEAR & BRIGHT</p>
-                            <p>결광 프리 에센스 50ml 구매 시<br>
-                                <b>15ml 추가 증정</b>
-                            </p>
-                            <img class="promo-prod" src="./img/promotion-main/promotion-pc-ample.png"
-                                alt="결광 프리 에센스 이미지">
-                            <p>칙칙함과 잡티 흔적을 케어해<br>
-                                맑고 균일한 피부로 만들어보세요</p>
-                            <a href="#">구매하러 가기</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-        </div>
+
+
+
+            <!-- =========================
+                 QUESTION 01
+            ========================== -->
+
+            <div class="question-box on">
+
+
+                <span class="question-label">
+                    QUESTION 01
+                </span>
+
+
+                <h2>
+                    세안 후 피부 상태는<br>
+                    어떤 편인가요?
+                </h2>
+
+
+                <ul class="answer-list">
+
+
+                    <li>
+
+                        <button type="button" data-result="dry">
+
+                            <strong>
+                                건조하고 당겨요
+                            </strong>
+
+                            <span>
+                                보습이 필요한 느낌이에요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="oily">
+
+                            <strong>
+                                금방 번들거려요
+                            </strong>
+
+                            <span>
+                                유분감이 쉽게 올라와요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="normal">
+
+                            <strong>
+                                건조함과 유분이 함께 있어요
+                            </strong>
+
+                            <span>
+                                부위마다 피부 상태가 달라요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="sensitive">
+
+                            <strong>
+                                쉽게 붉어지고 예민해요
+                            </strong>
+
+                            <span>
+                                자극에 민감하게 반응해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 QUESTION 02
+            ========================== -->
+
+            <div class="question-box">
+
+
+                <span class="question-label">
+                    QUESTION 02
+                </span>
+
+
+                <h2>
+                    지금 가장 신경 쓰이는<br>
+                    피부 고민은 무엇인가요?
+                </h2>
+
+
+                <ul class="answer-list">
+
+
+                    <li>
+
+                        <button type="button" data-result="sensitive">
+
+                            <strong>
+                                붉은기와 피부 진정
+                            </strong>
+
+                            <span>
+                                편안한 피부 컨디션이 필요해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="dry">
+
+                            <strong>
+                                건조함과 보습
+                            </strong>
+
+                            <span>
+                                촉촉함이 오래 유지되었으면 해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="bright">
+
+                            <strong>
+                                칙칙함과 잡티
+                            </strong>
+
+                            <span>
+                                피부톤이 맑아 보였으면 해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="oily">
+
+                            <strong>
+                                유분과 모공
+                            </strong>
+
+                            <span>
+                                산뜻한 피부가 되었으면 해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 QUESTION 03
+            ========================== -->
+
+            <div class="question-box">
+
+
+                <span class="question-label">
+                    QUESTION 03
+                </span>
+
+
+                <h2>
+                    평소 어떤 사용감을<br>
+                    가장 선호하시나요?
+                </h2>
+
+
+                <ul class="answer-list">
+
+
+                    <li>
+
+                        <button type="button" data-result="oily">
+
+                            <strong>
+                                가볍고 산뜻하게
+                            </strong>
+
+                            <span>
+                                빠르게 흡수되는 제품이 좋아요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="dry">
+
+                            <strong>
+                                촉촉하고 부드럽게
+                            </strong>
+
+                            <span>
+                                보습감이 오래 남았으면 해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="sensitive">
+
+                            <strong>
+                                편안하고 순하게
+                            </strong>
+
+                            <span>
+                                부담 없는 사용감을 선호해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="normal">
+
+                            <strong>
+                                특별한 선호는 없어요
+                            </strong>
+
+                            <span>
+                                피부에 잘 맞는 것이 중요해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 QUESTION 04
+            ========================== -->
+
+            <div class="question-box">
+
+
+                <span class="question-label">
+                    QUESTION 04
+                </span>
+
+
+                <h2>
+                    피부가 가장 편안했으면 하는<br>
+                    순간은 언제인가요?
+                </h2>
+
+
+                <ul class="answer-list">
+
+
+                    <li>
+
+                        <button type="button" data-result="sensitive">
+
+                            <strong>
+                                피부가 붉어졌을 때
+                            </strong>
+
+                            <span>
+                                빠르게 진정시키고 싶어요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="dry">
+
+                            <strong>
+                                세안 후 당길 때
+                            </strong>
+
+                            <span>
+                                바로 촉촉해졌으면 해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="bright">
+
+                            <strong>
+                                피부가 칙칙해 보일 때
+                            </strong>
+
+                            <span>
+                                생기 있어 보였으면 해요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="oily">
+
+                            <strong>
+                                오후에 번들거릴 때
+                            </strong>
+
+                            <span>
+                                산뜻한 상태를 유지하고 싶어요
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 QUESTION 05
+            ========================== -->
+
+            <div class="question-box">
+
+
+                <span class="question-label">
+                    QUESTION 05
+                </span>
+
+
+                <h2>
+                    지금 가장 추가하고 싶은<br>
+                    스킨케어 효과는 무엇인가요?
+                </h2>
+
+
+                <ul class="answer-list">
+
+
+                    <li>
+
+                        <button type="button" data-result="sensitive">
+
+                            <strong>
+                                피부 진정
+                            </strong>
+
+                            <span>
+                                편안하고 건강한 피부
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="dry">
+
+                            <strong>
+                                깊은 보습
+                            </strong>
+
+                            <span>
+                                오래 유지되는 촉촉함
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="bright">
+
+                            <strong>
+                                밝고 균일한 피부톤
+                            </strong>
+
+                            <span>
+                                맑고 생기 있는 피부
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                    <li>
+
+                        <button type="button" data-result="oily">
+
+                            <strong>
+                                산뜻한 유수분 밸런스
+                            </strong>
+
+                            <span>
+                                번들거림 없이 편안한 피부
+                            </span>
+
+                        </button>
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+
+            <!-- 이전 버튼 -->
+
+            <div class="question-bottom">
+
+                <button type="button" class="btn-prev-question">
+                    ← PREV
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             결과 화면
+        ====================================== -->
+
+        <section class="test-result">
+
+
+            <div class="result-inner">
+
+
+                <p class="result-small">
+                    YOUR KIEHL'S ROUTINE
+                </p>
+
+
+                <p class="result-type">
+                    CALM & COMFORT
+                </p>
+
+
+                <h2 class="result-title">
+
+                    지금 당신의 피부에는<br>
+                    편안한 진정 케어가 필요해요.
+
+                </h2>
+
+
+                <p class="result-desc">
+
+                    외부 환경에 쉽게 예민해지는 피부를 위해<br>
+
+                    피부를 편안하게 진정시키고<br>
+
+                    건강한 피부 컨디션을 유지하는 루틴을 추천합니다.
+
+                </p>
+
+
+
+                <!-- 추천제품 -->
+
+                <div class="result-product">
+
+
+                    <span>
+                        RECOMMENDED PRODUCT
+                    </span>
+
+                    <!-- 제품 이미지 -->
+                    <figure class="result-product-img">
+
+                        <img src="./img/test/toner 2.png" alt="키엘 칼렌듈라 꽃잎 진정 토너">
+
+                    </figure>
+
+                    <h3 class="result-product-name">
+                        칼렌듈라 꽃잎 진정 토너
+                    </h3>
+
+
+                    <p class="result-product-desc">
+
+                        피부를 산뜻하게 정돈하고<br>
+
+                        편안한 사용감을 선사하는 토너
+
+                    </p>
+
+
+                    <a href="./product.html" class="btn-product">
+                        제품 보러가기
+                    </a>
+
+
+                </div>
+
+
+
+                <button type="button" class="btn-restart">
+                    다시 테스트하기
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
     </main>
 
-    <!-- 푸터 -->
+      <!-- 푸터 -->
     <footer>
         <div class="common-frame">
             <div class="foot-1">
@@ -793,7 +1092,7 @@
                 </div>
             </div>
             <div class="foot-2">
-                <a href="./index.html" class="footlogo">
+                <a href="#" class="footlogo">
                     <img src="./img/logo-black.svg" alt="키엘 홈페이지 바로가기">
                 </a>
                 <div class="footdesc">
@@ -804,7 +1103,7 @@
                     </ul>
                     <div class="fdescb">
                         <address>
-                            <ul class="faddress">
+                            <ul>
                                 <li>키엘정보</li>
                                 <span></span>
                                 <li>대표: 로드리고 알바로 레벨로 피자로</li>
@@ -828,6 +1127,7 @@
             </div>
         </div>
     </footer>
+
 
 </body>
 
