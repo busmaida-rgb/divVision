@@ -362,6 +362,14 @@ main {
         bottom: 2rem;
     }
 
+    .new1-imgwrap>img:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .new1-imgwrap>img:nth-of-type(2) {
+        display: none;
+    }
+
     .new-2>.common-frame {
         display: grid;
         row-gap: 1rem;
