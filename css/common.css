@@ -71,6 +71,10 @@
     --beige800: #95854B;
     --beige900: #807240;
 
+    /* 히어로 스와이퍼 네비게이션버튼 속성 */
+    --swiper-navigation-color: #000000;
+    --swiper-navigation-sides-offset: 20px;
+    
 }
 
 html {
@@ -105,6 +109,8 @@ button {
     padding: 0 var(--space-3rem);
     height: 100%;
 }
+
+
 
 .product {
     flex: 1;
