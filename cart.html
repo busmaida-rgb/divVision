@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니 | Kiehl's</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <!-- 공용 CSS가 있다면 이 파일보다 먼저 연결 -->
+  <link rel="stylesheet" href="./css/cart.css">
+  <script src="./js/cart.js" defer></script>
+</head>
+
+<body>
+  <!-- 공용 헤더 삽입 위치 -->
+  <!-- 상단 띠배너 -->
+  <div class="line-banner">
+    <div class="line line1">키엘 신규고객 전 품목 15% 할인</div>
+    <div class="line line2">전 구매 고객 여행용 샘플 증정</div>
+  </div>
+  <!-- 헤더-PC -->
+  <header class="header-pc">
+    <div class="common-frame">
+      <!-- 헤더로고 -->
+      <a href="./index.html" class="logo"><img src="./img/logo-black.svg" alt="키엘 홈페이지 바로가기"></a>
+      <!-- GNB -->
+      <ul class="gnb">
+        <li class="gnb1depth">
+          <a class="gnb1depth-a" href="#">NEW</a>
+        </li>
+        <li class="gnb1depth">
+          <a class="gnb1depth-a" href="./bestseller.html">BEST SELLER</a>
+        </li>
+
+        <li class="gnb1depth mega-1depth">
+          <a class="gnb1depth-a" href="#">SKINCARE</a>
+          <div class="mega-menu-wrap">
+            <div class="mega-menu">
+              <section class="menu-column">
+                <p>스킨케어</p>
+                <a href="#">클렌저 &amp; 스크럽</a>
+                <a href="#">토너</a>
+                <a href="#">모이스처라이저</a>
+                <a href="#">에센스</a>
+                <a href="#">크림</a>
+                <a href="#">아이 &amp; 립 케어</a>
+                <a href="#">마스크</a>
+                <a href="#">자외선 차단제</a>
+              </section>
+              <section class="menu-column">
+                <p>피부고민별 제품 찾기</p>
+                <a href="#">보습</a>
+                <a href="#">손상 개선</a>
+                <a href="#">안티에이징</a>
+                <a href="#">브라이트닝</a>
+                <a href="#">피지 컨트롤</a>
+                <a href="#">모공</a>
+                <a href="#">스페셜 케어</a>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image1.jpg" alt="피부 진단 서비스">
+                </a>
+                <p>피부 진단 서비스</p>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image2.jpg" alt="칼렌듈라 꽃잎 진정 토너">
+                </a>
+                <p>칼렌듈라 꽃잎 진정 토너</p>
+              </section>
+            </div>
+          </div>
+        </li>
+
+        <li class="gnb1depth mega-1depth">
+          <a class="gnb1depth-a" href="#">BODY &amp; HAIR</a>
+          <div class="mega-menu-wrap">
+            <div class="mega-menu ">
+              <section class="menu-column">
+                <p>바디</p>
+                <a href="#">바디 클렌저 &amp; 스크럽</a>
+                <a href="#">바디 모이스처</a>
+                <a href="#">데오도란트</a>
+                <a href="#">핸드</a>
+                <a href="#">리필</a>
+                <a href="#">베이비</a>
+                <a href="#">향수</a>
+              </section>
+              <section class="menu-column">
+                <p>헤어</p>
+                <a href="#">헤어 샴푸</a>
+                <a href="#">헤어 컨디셔너</a>
+                <a href="#">헤어 트리트먼트</a>
+                <a href="#">헤어 스타일링</a>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image3.jpg" alt="키엘 오리지널 머스크 향수">
+                </a>
+                <p>키엘 오리지널 머스크 향수</p>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image4.jpg" alt="올리브 프룻 오일 헤어 마스크">
+                </a>
+                <p>올리브 프룻 오일 헤어 마스크</p>
+              </section>
+            </div>
+          </div>
+        </li>
+
+        <li class="gnb1depth mega-1depth">
+          <a class="gnb1depth-a" href="#">PROMOTION</a>
+          <div class="mega-menu-wrap">
+            <div class="mega-menu">
+              <section class="menu-column">
+                <p>공식몰 혜택</p>
+                <a href="#">공식몰 단독 혜택</a>
+              </section>
+              <section class="menu-column">
+                <p>이벤트</p>
+                <a href="#">마일리지</a>
+                <a href="#">웰컴 키트 한정 판매</a>
+                <a href="#">울트라 훼이셜 크림 프로모션</a>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image5.jpg" alt="공식몰 혜택">
+                </a>
+                <p>공식몰 혜택</p>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image6.jpg" alt="울트라 훼이셜 크림 프로모션">
+                </a>
+                <p>울트라 훼이셜 크림 프로모션</p>
+              </section>
+            </div>
+          </div>
+        </li>
+
+        <li class="gnb1depth mega-1depth">
+          <a class="gnb1depth-a" href="#">ABOUT</a>
+          <div class="mega-menu-wrap">
+            <div class="mega-menu">
+              <section class="menu-column">
+                <p>키엘의 이야기</p>
+                <a href="./about.html">브랜드 히스토리</a>
+                <a href="#">키엘의 환경 캠페인</a>
+                <a href="#">키엘의 지속 가능성 용어집</a>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="./about.html">
+                  <img src="./img/gnb-image7.jpg" alt="브랜드 히스토리">
+                </a>
+                <p>브랜드 히스토리</p>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image8.jpg" alt="키엘의 환경 캠페인">
+                </a>
+                <p>키엘의 환경 캠페인</p>
+              </section>
+              <section class="menu-image">
+                <a class="menu-card" href="#">
+                  <img src="./img/gnb-image9.jpg" alt="지속 가능성 용어집">
+                </a>
+                <p>지속 가능성 용어집</p>
+              </section>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 헤더우측아이콘들 -->
+      <div class="head-icons">
+        <ul>
+          <li>
+            <a href="#" class="search_icon">
+              <img src="./img/search_icon.svg" alt="검색">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="my_icon">
+              <img src="./img/my_icon.svg" alt="마이페이지">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="shop_icon">
+              <img src="./img/shop_icon.svg" alt="장바구니">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- 헤더-스마트 -->
+  <div class="header-smart">
+    <div class="common-frame">
+      <!-- 메뉴버튼 -->
+      <div class="menu-btn">
+        <a href="#">
+          <img src="./img/menuicon.svg" alt="전체메뉴 열기">
+        </a>
+      </div>
+      <!-- 로고 -->
+      <a href="./index.html" class="logo"><img src="./img/logo-black.svg" alt="키엘 홈페이지 바로가기"></a>
+      <!-- 헤더우측아이콘들 -->
+      <div class="head-icons">
+        <ul>
+          <li>
+            <a href="#" class="search_icon">
+              <img src="./img/search_icon.svg" alt="검색">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="my_icon">
+              <img src="./img/my_icon.svg" alt="마이페이지">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="shop_icon">
+              <img src="./img/shop_icon.svg" alt="장바구니">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 스마트헤더오버레이 -->
+  <ul class="smart-gnb">
+    <li class="smart-gnbmenu">
+      <div class="smart-gnb1depth">
+        <a class="smart-gnb1depth-a" href="#"><span>NEW</span></a>
+      </div>
+    </li>
+    <li class="smart-gnbmenu">
+      <div class="smart-gnb1depth">
+        <a class="smart-gnb1depth-a" href="./bestseller.html"><span>BEST SELLER</span></a>
+      </div>
+    </li>
+    <li class="smart-gnbmenu">
+      <div class="smart-gnb1depth">
+        <a class="smart-gnb1depth-a smart-mega-1depth" href="#"><span>SKINCARE</span><img src="./img/gnb-down.svg"
+            alt="하위메뉴 열기"></a>
+      </div>
+      <div class="smart-mega-menu">
+        <div class="smart-mega-inner">
+          <section class="smart-menu-column">
+            <span>스킨케어</span>
+            <ul>
+              <li><a href="#">클렌저 &amp; 스크럽</a></li>
+              <li><a href="#">토너</a></li>
+              <li><a href="#">모이스처라이저</a></li>
+              <li><a href="#">에센스</a></li>
+              <li><a href="#">크림</a></li>
+              <li><a href="#">아이 &amp; 립 케어</a></li>
+              <li><a href="#">마스크</a></li>
+              <li><a href="#">자외선 차단제</a></li>
+            </ul>
+          </section>
+          <section class="smart-menu-column">
+            <span>피부고민별 제품 찾기</span>
+            <ul>
+              <li><a href="#">보습</a></li>
+              <li><a href="#">손상 개선</a></li>
+              <li><a href="#">안티에이징</a></li>
+              <li><a href="#">브라이트닝</a></li>
+              <li><a href="#">피지 컨트롤</a></li>
+              <li><a href="#">모공</a></li>
+              <li><a href="#">스페셜 케어</a></li>
+            </ul>
+          </section>
+          <section class="smart-menu-column">
+            <span>피부 진단 서비스</span>
+          </section>
+        </div>
+      </div>
+    </li>
+    <li class="smart-gnbmenu">
+      <div class="smart-gnb1depth">
+        <a class="smart-gnb1depth-a smart-mega-1depth" href="#"><span>BODY &amp; HAIR</span><img
+            src="./img/gnb-down.svg" alt="하위메뉴 열기"></a>
+      </div>
+      <div class="smart-mega-menu ">
+        <div class="smart-mega-inner">
+          <section class="smart-menu-column">
+            <span>바디</span>
+            <ul>
+              <li><a href="#">바디 클렌저 &amp; 스크럽</a></li>
+              <li><a href="#">바디 모이스처</a></li>
+              <li><a href="#">데오도란트</a></li>
+              <li><a href="#">핸드</a></li>
+              <li><a href="#">리필</a></li>
+              <li><a href="#">베이비</a></li>
+              <li><a href="#">향수</a></li>
+            </ul>
+          </section>
+          <section class="smart-menu-column">
+            <span>헤어</span>
+            <ul>
+              <li><a href="#">헤어 샴푸</a></li>
+              <li><a href="#">헤어 컨디셔너</a></li>
+              <li><a href="#">헤어 트리트먼트</a></li>
+              <li><a href="#">헤어 스타일링</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </li>
+    <li class="smart-gnbmenu">
+      <div class="smart-gnb1depth">
+        <a class="smart-gnb1depth-a smart-mega-1depth" href="#"><span>PROMOTION</span><img src="./img/gnb-down.svg"
+            alt="하위메뉴 열기"></a>
+      </div>
+      <div class="smart-mega-menu">
+        <div class="smart-mega-inner">
+          <section class="smart-menu-column">
+            <span>공식몰 혜택</span>
+            <ul>
+              <li><a href="#">공식몰 단독 혜택</a></li>
+            </ul>
+          </section>
+          <section class="smart-menu-column">
+            <span>이벤트</span>
+            <ul>
+              <li><a href="#">마일리지</a></li>
+              <li><a href="#">웰컴 키트 한정 판매</a></li>
+              <li><a href="#">울트라 훼이셜 크림 프로모션</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </li>
+    <li class="smart-gnbmenu">
+      <div class="smart-gnb1depth">
+        <a class="smart-gnb1depth-a smart-mega-1depth" href="#"><span>ABOUT</span><img src="./img/gnb-down.svg"
+            alt="하위메뉴 열기"></a>
+      </div>
+      <div class="smart-mega-menu">
+        <div class="smart-mega-inner">
+          <section class="smart-menu-column">
+            <span>키엘의 이야기</span>
+            <ul>
+              <li><a href="./about.html">브랜드 히스토리</a></li>
+              <li><a href="#">키엘의 환경 캠페인</a></li>
+              <li><a href="#">키엘의 지속 가능성 용어집</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <main class="cart-page">
+    <div class="cart-layout">
+      <section class="cart-products" aria-labelledby="cartPageTitle">
+        <div class="cart-title-row">
+          <h1 id="cartPageTitle">장바구니</h1>
+
+          <div class="cart-selection-actions">
+            <button type="button" data-cart-delete-selected>선택삭제</button>
+            <label>
+              <input type="checkbox" data-cart-select-all checked>
+              <span>전체선택</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="cart-empty" data-cart-empty hidden>
+          <p>장바구니에 담긴 상품이 없습니다.</p>
+          <a href="./product.html">제품 보러 가기</a>
+        </div>
+
+        <article class="cart-product" data-cart-product>
+          <label class="cart-check" aria-label="상품 선택">
+            <input type="checkbox" data-cart-item-check checked>
+            <span aria-hidden="true"></span>
+          </label>
+
+          <div class="cart-product-image">
+            <img src="./img/productpage-img/calendula-toner-main.jpg" alt="키엘 칼렌듈라 꽃잎 진정 토너">
+          </div>
+
+          <div class="cart-product-info">
+            <div class="cart-product-heading">
+              <div>
+                <h2>키엘 칼렌듈라 꽃잎 진정 토너</h2>
+                <strong data-cart-unit-price>54,000원</strong>
+              </div>
+              <button type="button" class="cart-remove" data-cart-remove>삭제</button>
+            </div>
+
+            <dl class="cart-product-options">
+              <div>
+                <dt>옵션</dt>
+                <dd data-cart-size>250ml</dd>
+              </div>
+              <div>
+                <dt>수량</dt>
+                <dd>
+                  <div class="cart-quantity" aria-label="수량 변경">
+                    <button type="button" data-cart-decrease aria-label="수량 줄이기">−</button>
+                    <output data-cart-quantity aria-live="polite">1</output>
+                    <button type="button" data-cart-increase aria-label="수량 늘리기">＋</button>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+      </section>
+
+      <aside class="cart-summary" aria-labelledby="cartSummaryTitle">
+        <h2 id="cartSummaryTitle">결제 내역</h2>
+
+        <dl class="cart-summary-list">
+          <div>
+            <dt>주문 금액</dt>
+            <dd data-cart-order-price>54,000원</dd>
+          </div>
+          <div>
+            <dt>배송비</dt>
+            <dd>0원</dd>
+          </div>
+          <div class="cart-summary-total">
+            <dt>총 결제 금액</dt>
+            <dd data-cart-total-price>54,000원</dd>
+          </div>
+        </dl>
+
+        <button type="button" class="cart-checkout" data-cart-checkout>구매하기</button>
+      </aside>
+    </div>
+  </main>
+
+  <!-- 공용 푸터 삽입 위치 -->
+  <script src="./cart.js"></script>
+</body>
+
+</html>

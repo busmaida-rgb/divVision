@@ -1,0 +1,62 @@
+<!-- 기존 product.html의 </body> 바로 위에 추가 -->
+<div class="product-cart-overlay" data-product-cart-close hidden></div>
+
+<aside
+  class="product-cart-drawer"
+  id="productCartDrawer"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="productCartTitle"
+  aria-hidden="true"
+>
+  <header class="product-cart-header">
+    <h2 id="productCartTitle">장바구니 (<span data-cart-count>1</span>)</h2>
+    <button class="product-cart-close" type="button" data-product-cart-close aria-label="장바구니 닫기">
+      <span aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="product-cart-content">
+    <p class="product-cart-empty" data-cart-empty hidden>장바구니가 비어 있습니다.</p>
+
+    <article class="product-cart-item" data-cart-item>
+      <div class="product-cart-thumb">
+        <img src="./img/productpage-img/calendula-toner-main.jpg" alt="">
+      </div>
+
+      <div class="product-cart-info">
+        <h3>키엘 칼렌듈라 꽃잎 진정 토너</h3>
+        <strong data-cart-unit-price>54,000원</strong>
+
+        <dl class="product-cart-details">
+          <div>
+            <dt>옵션</dt>
+            <dd data-cart-size>250ml</dd>
+          </div>
+          <div>
+            <dt>수량</dt>
+            <dd>
+              <div class="product-cart-quantity" aria-label="수량 변경">
+                <button type="button" data-cart-decrease aria-label="수량 줄이기">−</button>
+                <output data-cart-quantity aria-live="polite">1</output>
+                <button type="button" data-cart-increase aria-label="수량 늘리기">＋</button>
+              </div>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <button class="product-cart-remove" type="button" data-cart-remove>삭제</button>
+    </article>
+  </div>
+
+  <footer class="product-cart-footer">
+    <div class="product-cart-total">
+      <span>주문 금액</span>
+      <strong data-cart-total>54,000원</strong>
+    </div>
+
+    <button class="product-cart-buy" type="button" data-cart-buy>구매하기</button>
+    <a class="product-cart-view" href="./cart.html">장바구니 보기</a>
+  </footer>
+</aside>
