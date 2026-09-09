@@ -2,73 +2,129 @@
 // 제품 이미지 슬라이드
 // =========================================
 
-const slideLeft = document.querySelector('.slide-left img');
-const slideRight = document.querySelector('.slide-right img');
+const slideView = document.querySelector('.slide-view');
 
 const btnPrev = document.querySelector('.btn-prev');
 const btnNext = document.querySelector('.btn-next');
 
-
-const slideImages = [
-    './productpage-img/calendula-toner-main.jpg',
-    './productpage-img/calendula-toner-main2.jpg',
-    './productpage-img/calendula-toner-main3.jpg'
-];
-
-
 let slideIdx = 0;
 
 
-// 이미지 보여주는 함수
+// 슬라이드 이동
+
 function showSlide(){
 
-    let nextIdx = slideIdx + 1;
+    let move;
 
-    if(nextIdx >= slideImages.length){
-        nextIdx = 0;
+    // 모바일
+    if(window.innerWidth <= 768){
+
+        move = slideIdx * 100;
+
     }
 
-    slideLeft.src = slideImages[slideIdx];
+    // PC / PAD
+    else{
 
-    slideRight.src = slideImages[nextIdx];
+        move = slideIdx * 50;
+
+    }
+
+
+    slideView.style.transform =
+        'translateX(-' + move + '%)';
+
 }
 
 
+
+// =========================================
 // 다음 버튼
+// =========================================
+
 if(btnNext){
 
     btnNext.addEventListener('click',()=>{
 
         slideIdx++;
 
-        if(slideIdx >= slideImages.length){
-            slideIdx = 0;
-        }
 
         showSlide();
+
+
+        // 마지막 복사 이미지까지 이동한 후 처음으로 되돌리기
+
+        if(slideIdx === 3){
+
+            setTimeout(()=>{
+
+                slideView.style.transition = 'none';
+
+                slideIdx = 0;
+
+                showSlide();
+
+
+                setTimeout(()=>{
+
+                    slideView.style.transition =
+                        'transform 0.45s ease';
+
+                },50);
+
+            },450);
+
+        }
 
     });
 
 }
 
 
+
+// =========================================
 // 이전 버튼
+// =========================================
+
 if(btnPrev){
 
     btnPrev.addEventListener('click',()=>{
 
-        slideIdx--;
+        // 첫 번째 이미지에서 이전 버튼
 
-        if(slideIdx < 0){
-            slideIdx = slideImages.length - 1;
+        if(slideIdx === 0){
+
+            slideView.style.transition = 'none';
+
+            slideIdx = 3;
+
+            showSlide();
+
+
+            setTimeout(()=>{
+
+                slideView.style.transition =
+                    'transform 0.45s ease';
+
+                slideIdx = 2;
+
+                showSlide();
+
+            },50);
+
         }
 
-        showSlide();
+        else{
+
+            slideIdx--;
+
+            showSlide();
+
+        }
 
     });
 
 }
-
 
 
 // =========================================
@@ -145,6 +201,7 @@ tabLists.forEach((li,idx)=>{
     });
 
 });
+
 
 
 

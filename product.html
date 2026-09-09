@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>칼렌듈라 꽃잎 진정 토너 | Kiehl's</title>
     <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/font.css">
@@ -193,7 +193,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="shop_icon">
+                        <a href="./cart.html" class="shop_icon">
                             <img src="./img/shop_icon.svg" alt="장바구니">
                         </a>
                     </li>
@@ -226,7 +226,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="shop_icon">
+                        <a href="./cart.html" class="shop_icon">
                             <img src="./img/shop_icon.svg" alt="장바구니">
                         </a>
                     </li>
@@ -360,742 +360,489 @@
     </ul>
 
     <main>
-
         <!-- =====================================
          제품 상단
     ====================================== -->
         <section class="product-top">
-
             <div class="product-slider">
-
-                <button type="button" class="btn-prev" aria-label="이전 이미지">
+                <!-- 이전 버튼 -->
+                <button aria-label="이전 이미지" class="btn-prev" type="button">
                     <span></span>
                 </button>
-
-
+                <!-- 슬라이드 -->
                 <div class="slide-view">
-
-                    <figure class="slide-item slide-left">
-                        <img src="./img/productpage-img/calendula-toner-main.jpg" alt="키엘 칼렌듈라 토너 이미지 1">
+                    <figure class="slide-item">
+                        <img alt="키엘 칼렌듈라 토너 이미지 1" src="./img/productpage-img/calendula-toner-main.jpg" />
                     </figure>
-
-                    <figure class="slide-item slide-right">
-                        <img src="./img/productpage-img/calendula-toner-main2.jpg" alt="키엘 칼렌듈라 토너 이미지 2">
+                    <figure class="slide-item">
+                        <img alt="키엘 칼렌듈라 토너 이미지 2" src="./img/productpage-img/calendula-toner-main2.jpg" />
                     </figure>
-
+                    <figure class="slide-item">
+                        <img alt="키엘 칼렌듈라 토너 이미지 3" src="./img/productpage-img/calendula-toner-main3.jpg" />
+                    </figure>
+                    <!-- 반복용 -->
+                    <figure class="slide-item">
+                        <img alt="" src="./img/productpage-img/calendula-toner-main.jpg" />
+                    </figure>
+                    <figure class="slide-item">
+                        <img alt="" src="./img/productpage-img/calendula-toner-main2.jpg" />
+                    </figure>
                 </div>
-
-
-                <button type="button" class="btn-next" aria-label="다음 이미지">
+                <!-- 다음 버튼 -->
+                <button aria-label="다음 이미지" class="btn-next" type="button">
                     <span></span>
                 </button>
-
-
                 <!-- 구매 카드 -->
                 <div class="buy-info">
-
                     <div class="product-name">
-
                         <span>스킨케어</span>
-
                         <h1>
                             키엘 칼렌듈라 꽃잎 진정 토너
                         </h1>
-
                         <p>
                             외부 자극으로 인한 붉은기를 진정 시켜주는
                             칼렌듈라 토너
                         </p>
-
                     </div>
-
                     <div class="product-price">
                         <b class="price-text">₩ 54,000</b>
                     </div>
-
-
                     <div class="product-size">
-
                         <span>사이즈</span>
-
                         <ul class="size-list">
-
                             <li class="on">
-                                <button type="button" data-price="54000">
+                                <button data-price="54000" type="button">
                                     250ml
                                 </button>
                             </li>
-
                             <li>
-                                <button type="button" data-price="107000">
+                                <button data-price="107000" type="button">
                                     500ml
                                 </button>
                             </li>
-
                         </ul>
-
                     </div>
-
                     <div class="buy-buttons">
-
-                        <button type="button" class="btn-cart">
+                        <button class="btn-cart" type="button">
                             장바구니에 넣기
                         </button>
-
-                        <button type="button" class="btn-buy">
+                        <button class="btn-buy" type="button">
                             바로 구매하기
                         </button>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-
         <!-- =====================================
          제품 상세
     ====================================== -->
         <section class="product-detail">
-
-
             <!-- 탭 -->
             <div class="tab-menu">
-
                 <ul>
-
                     <li class="on">
                         <button type="button">
                             제품설명
                         </button>
                     </li>
-
                     <li>
                         <button type="button">
                             상품필수정보
                         </button>
                     </li>
-
                     <li>
                         <button type="button">
                             리뷰
                         </button>
                     </li>
-
                     <li>
                         <button type="button">
                             전성분
                         </button>
                     </li>
-
                 </ul>
-
             </div>
-
-
             <!-- =================================
              제품설명
         ================================== -->
             <div class="tab-content on">
-
                 <div class="detail-img">
-
                     <picture>
-
-                        <source media="(max-width:768px)" srcset="./img/productpage-img/calendula-detail-mo.jpg">
-
-                        <source media="(max-width:1024px)" srcset="./img/productpage-img/calendula-detail-pad.jpg">
-
-                        <img src="./img/productpage-img/calendula-detail-pc.jpg" alt="칼렌듈라 토너 제품설명">
-
+                        <source media="(max-width:768px)" srcset="./img/productpage-img/calendula-detail-mo.jpg" />
+                        <source media="(max-width:1024px)" srcset="./img/productpage-img/calendula-detail-pad.jpg" />
+                        <img alt="칼렌듈라 토너 제품설명" src="./img/productpage-img/calendula-detail-pc.jpg" />
                     </picture>
-
                 </div>
-
             </div>
-
-
-
             <!-- =================================
              상품필수정보
         ================================== -->
             <div class="tab-content">
-
                 <div class="product-information">
-
                     <dl>
-
                         <dt>제조사</dt>
                         <dd>미국 로레알사</dd>
-
                         <dt>브랜드</dt>
                         <dd>키엘</dd>
-
                         <dt>모델명</dt>
                         <dd>키엘 칼렌듈라 꽃잎 토너</dd>
-
                         <dt>원산지</dt>
                         <dd>미국산</dd>
-
                         <dt>사용부위</dt>
                         <dd>페이스용</dd>
-
                         <dt>세부제품특징</dt>
                         <dd>피부진정</dd>
-
                         <dt>주요제품특징</dt>
                         <dd>촉촉함, 저자극</dd>
-
                     </dl>
-
                 </div>
-
             </div>
-
-
-
             <div class="tab-content">
-
                 <div class="review-wrap">
-
                     <!-- ==============================
              평점 요약
         =============================== -->
                     <div class="review-summary">
-
                         <div class="review-total">
                             <strong>
                                 <span>★</span> 4.9
                             </strong>
-
                             <p>
                                 최근 6개월 평균 4.87
                             </p>
                         </div>
-
-
                         <div class="review-bars">
-
                             <div class="review-bar">
-
                                 <b>세정력</b>
-
                                 <span>보통이에요</span>
-
                                 <div class="bar-line">
                                     <i class="bar50"></i>
                                 </div>
-
                                 <em>50%</em>
-
                             </div>
-
-
                             <div class="review-bar">
-
                                 <b>촉촉함</b>
-
                                 <span>촉촉해요</span>
-
                                 <div class="bar-line">
                                     <i class="bar85"></i>
                                 </div>
-
                                 <em>85%</em>
-
                             </div>
-
-
                             <div class="review-bar">
-
                                 <b>피부자극</b>
-
                                 <span>아주 만족해요</span>
-
                                 <div class="bar-line">
                                     <i class="bar85"></i>
                                 </div>
-
                                 <em>85%</em>
-
                             </div>
-
                         </div>
-
                     </div>
-
-
                     <!-- ==============================
              스토어 PICK
         =============================== -->
                     <div class="store-pick">
-
                         <h3>스토어 PICK</h3>
-
                         <ul class="pick-list">
-
                             <!-- PICK 1 -->
                             <li>
-
                                 <div class="pick-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <div class="pick-user-info">
-
                                         <strong>★ 5</strong>
-
                                         <p>
                                             gmmg*** · 26.07.02
                                         </p>
-
                                     </div>
-
                                 </div>
-
-
                                 <p class="pick-text">
                                     자극 없이 순해서 오래 쓰고 있어요.
                                     피부가 편안해지는 느낌이에요.
                                 </p>
-
-
                                 <figure>
-                                    <img src="./img/productpage-img/review01.jpg" alt="스토어픽 리뷰 이미지">
+                                    <img alt="스토어픽 리뷰 이미지" src="./img/productpage-img/review01.jpg" />
                                 </figure>
-
                             </li>
-
-
                             <!-- PICK 2 -->
                             <li>
-
                                 <div class="pick-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <div class="pick-user-info">
-
                                         <strong>★ 5</strong>
-
                                         <p>
                                             gks1*** · 26.06.27
                                         </p>
-
                                     </div>
-
                                 </div>
-
-
                                 <p class="pick-text">
                                     몇 년째 꾸준히 사용하는 토너예요.
                                     가볍고 촉촉해서 좋아요.
                                 </p>
-
-
                                 <figure>
-                                    <img src="./img/productpage-img/review02.jpg" alt="스토어픽 리뷰 이미지">
+                                    <img alt="스토어픽 리뷰 이미지" src="./img/productpage-img/review02.jpg" />
                                 </figure>
-
                             </li>
-
-
                             <!-- PICK 3 -->
                             <li>
-
                                 <div class="pick-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <div class="pick-user-info">
-
                                         <strong>★ 5</strong>
-
                                         <p>
                                             hsu*** · 26.02.11
                                         </p>
-
                                     </div>
-
                                 </div>
-
-
                                 <p class="pick-text">
                                     피부가 쉽게 붉어지는 편인데
                                     사용감이 편안해서 만족해요.
                                 </p>
-
-
                                 <figure>
-                                    <img src="./img/productpage-img/review03.jpg" alt="스토어픽 리뷰 이미지">
+                                    <img alt="스토어픽 리뷰 이미지" src="./img/productpage-img/review03.jpg" />
                                 </figure>
-
                             </li>
-
                         </ul>
-
                     </div>
-
-
                     <!-- ==============================
              포토 & 동영상
         =============================== -->
                     <div class="photo-review">
-
                         <h3>
-                            포토&동영상 2,340
+                            포토&amp;동영상 2,340
                         </h3>
-
-
                         <ul class="photo-list">
-
                             <li>
-                                <img src="./img/productpage-img/review01.jpg" alt="">
+                                <img alt="" src="./img/productpage-img/review01.jpg" />
                             </li>
-
                             <li>
-                                <img src="./img/productpage-img/review02.jpg" alt="">
+                                <img alt="" src="./img/productpage-img/review02.jpg" />
                             </li>
-
                             <li>
-                                <img src="./img/productpage-img/review03.jpg" alt="">
+                                <img alt="" src="./img/productpage-img/review03.jpg" />
                             </li>
-
                             <li>
-                                <img src="./img/productpage-img/review04.jpg" alt="">
+                                <img alt="" src="./img/productpage-img/review04.jpg" />
                             </li>
-
                             <li>
-                                <img src="./img/productpage-img/review05.jpg" alt="">
+                                <img alt="" src="./img/productpage-img/review05.jpg" />
                             </li>
-
                             <li>
-                                <img src="./img/productpage-img/review01.jpg" alt="">
+                                <img alt="" src="./img/productpage-img/review01.jpg" />
                             </li>
-
                             <li>
-                                <img src="./img/productpage-img/review02.jpg" alt="">
+                                <img alt="" src="./img/productpage-img/review02.jpg" />
                             </li>
-
                             <li class="photo-more">
-
                                 <button type="button">
                                     더보기
                                     <span>+2,333</span>
                                 </button>
-
                             </li>
-
                         </ul>
-
                     </div>
-
-
                     <!-- ==============================
              일반 리뷰
         =============================== -->
                     <div class="review-list-wrap">
-
                         <h3>
                             리뷰 4,152
                         </h3>
-
-
                         <ul class="review-list">
-
                             <!-- 리뷰 1 -->
                             <li>
-
                                 <div class="review-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <p>gmmg***</p>
                                     <span>26.07.02</span>
-
                                 </div>
-
-
                                 <div class="review-txt">
-
                                     <div class="review-score">
                                         <span>★★★★★</span>
                                         <i>5.0</i>
                                     </div>
-
                                     <h4>
                                         피부가 편안해져요
                                     </h4>
-
                                     <p>
                                         예민한 피부라 아무 제품이나 못쓰는데
                                         사용 후 피부가 부드럽고 편안해졌어요.
                                         끈적이지 않아서 다음 단계 스킨케어도 잘 발립니다.
                                     </p>
-
                                     <div class="review-tag">
                                         <span>민감성</span>
                                         <span>30대</span>
                                         <span>재구매</span>
                                     </div>
-
                                 </div>
-
-
                                 <figure class="review-img">
-                                    <img src="./img/productpage-img/review01.jpg" alt="리뷰 이미지">
+                                    <img alt="리뷰 이미지" src="./img/productpage-img/review01.jpg" />
                                 </figure>
-
                             </li>
-
-
                             <!-- 리뷰 2 -->
                             <li>
-
                                 <div class="review-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <p>gks1***</p>
                                     <span>26.06.27</span>
-
                                 </div>
-
-
                                 <div class="review-txt">
-
                                     <div class="review-score">
                                         <span>★★★★★</span>
                                         <i>5.0</i>
                                     </div>
-
                                     <h4>
                                         산뜻한데 건조하지 않아요
                                     </h4>
-
                                     <p>
                                         촉촉한 토너는 무거운 경우가 많은데
                                         이건 가볍게 흡수돼서 좋아요.
                                         여름에도 부담 없이 사용할 수 있을 것 같아요.
                                     </p>
-
                                     <div class="review-tag">
                                         <span>복합성</span>
                                         <span>20대</span>
                                     </div>
-
                                 </div>
-
-
                                 <figure class="review-img">
-                                    <img src="./img/productpage-img/review02.jpg" alt="리뷰 이미지">
+                                    <img alt="리뷰 이미지" src="./img/productpage-img/review02.jpg" />
                                 </figure>
-
                             </li>
-
-
                             <!-- 리뷰 3 -->
                             <li>
-
                                 <div class="review-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <p>heej***</p>
                                     <span>26.06.18</span>
-
                                 </div>
-
-
                                 <div class="review-txt">
-
                                     <div class="review-score">
                                         <span>★★★★★</span>
                                         <i>5.0</i>
                                     </div>
-
                                     <h4>
                                         벌써 세 번째 사용 중이에요
                                     </h4>
-
                                     <p>
                                         처음엔 유명해서 사용했는데
                                         지금은 없으면 허전할 정도예요.
                                         피부결 정돈용으로 꾸준히 쓰기 좋아요.
                                     </p>
-
                                     <div class="review-tag">
                                         <span>건성</span>
                                         <span>40대</span>
                                     </div>
-
                                 </div>
-
-
                                 <figure class="review-img">
-                                    <img src="./img/productpage-img/review03.jpg" alt="리뷰 이미지">
+                                    <img alt="리뷰 이미지" src="./img/productpage-img/review03.jpg" />
                                 </figure>
-
                             </li>
-
-
                             <!-- 리뷰 4 : 처음에는 숨김 -->
                             <li class="more-review">
-
                                 <div class="review-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <p>lim2***</p>
                                     <span>26.06.10</span>
-
                                 </div>
-
-
                                 <div class="review-txt">
-
                                     <div class="review-score">
                                         <span>★★★★☆</span>
                                         <i>4.0</i>
                                     </div>
-
                                     <h4>
                                         예민한 날에도 잘 맞아요
                                     </h4>
-
                                     <p>
                                         피부 컨디션이 안 좋은 날에도
                                         비교적 편안하게 사용할 수 있었어요.
                                     </p>
-
                                     <div class="review-tag">
                                         <span>민감성</span>
                                         <span>30대</span>
                                     </div>
-
                                 </div>
-
-
                                 <figure class="review-img">
-                                    <img src="./img/productpage-img/review04.jpg" alt="리뷰 이미지">
+                                    <img alt="리뷰 이미지" src="./img/productpage-img/review04.jpg" />
                                 </figure>
-
                             </li>
-
-
                             <!-- 리뷰 5 : 처음에는 숨김 -->
                             <li class="more-review">
-
                                 <div class="review-user">
-
                                     <div class="review-avatar">
                                         <span class="avatar-head"></span>
                                         <span class="avatar-body"></span>
                                     </div>
-
                                     <p>song***</p>
                                     <span>26.06.05</span>
-
                                 </div>
-
-
                                 <div class="review-txt">
-
                                     <div class="review-score">
                                         <span>★★★★★</span>
                                         <i>4.8</i>
                                     </div>
-
                                     <h4>
                                         화장 전에 사용하기 좋아요
                                     </h4>
-
                                     <p>
                                         흡수가 빠르고 잔여감이 거의 없어서
                                         메이크업 전에 사용하기 좋아요.
                                     </p>
-
                                     <div class="review-tag">
                                         <span>복합성</span>
                                         <span>20대</span>
                                     </div>
-
                                 </div>
-
-
                                 <figure class="review-img">
-                                    <img src="./img/productpage-img/review05.jpg" alt="리뷰 이미지">
+                                    <img alt="리뷰 이미지" src="./img/productpage-img/review05.jpg" />
                                 </figure>
-
                             </li>
-
                         </ul>
-
-
                         <!-- 리뷰 더보기 -->
                         <div class="review-more">
-
-                            <button type="button" class="btn-review-more">
+                            <button class="btn-review-more" type="button">
                                 리뷰 더보기 +
                             </button>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-
             <!-- =================================
              전성분
         ================================== -->
             <div class="tab-content">
-
                 <div class="ingredient">
-
                     <h4>
                         [화장품법]에 따라 기재 표시하여야 하는 모든 성분
                     </h4>
-
                     <p>
                         정제수 프로필렌글라이콜 프로판다이올
                         서양송악잎/줄기추출물 포트마리골드꽃
                         마시멜로뿌리추출물 알란토인 글리세린
                         페녹시에탄올 클로페네신 카라멜
                     </p>
-
                 </div>
-
             </div>
-
         </section>
-
     </main>
 
 
@@ -1107,7 +854,6 @@
         <span></span>
         TOP
     </button>
-
     <!-- 푸터 -->
     <footer>
         <div class="common-frame">
@@ -1202,19 +948,19 @@
 
     <aside class="product-cart-drawer" id="productCartDrawer" role="dialog" aria-modal="true"
         aria-labelledby="productCartTitle" aria-hidden="true">
-        <header class="product-cart-header">
+        <div class="product-cart-header">
             <h2 id="productCartTitle">장바구니 (<span data-cart-count>1</span>)</h2>
             <button class="product-cart-close" type="button" data-product-cart-close aria-label="장바구니 닫기">
                 <span aria-hidden="true"></span>
             </button>
-        </header>
+        </div>
 
         <div class="product-cart-content">
             <p class="product-cart-empty" data-cart-empty hidden>장바구니가 비어 있습니다.</p>
 
             <article class="product-cart-item" data-cart-item>
                 <div class="product-cart-thumb">
-                    <img src="./img/productpage-img/calendula-toner-main.jpg" alt="">
+                    <img src="./img/bs-2.png" alt="토너 장바구니사진">
                 </div>
 
                 <div class="product-cart-info">

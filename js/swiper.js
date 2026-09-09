@@ -14,20 +14,20 @@ const heroBanner = new Swiper('.hero-banner', {
 const bestSellerProducts = new Swiper('.best-seller-products',{
   breakpoints: {
     0: {
-      slidesPerView: 1.7,
+      slidesPerView: 1.5,
       spaceBetween: 12
     },
     340: {
-      slidesPerView: 2.7,
+      slidesPerView: 2.5,
       spaceBetween: 12
     },
     768: {
-      slidesPerView: 3.7,
-      spaceBetween: 12
+      slidesPerView: 3.5,
+      spaceBetween: 14
     },
     1024: {
-      slidesPerView: 4.7,
-      spaceBetween: 14
+      slidesPerView: 4.5,
+      spaceBetween: 16
     }
   }
 });
