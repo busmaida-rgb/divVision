@@ -214,7 +214,7 @@ header>.common-frame {
     .smart-gnb {
         display: block;
         position: fixed;
-        z-index: 1000;
+        z-index: 1100;
         left: 0;
         width: 100%;
         height: calc(100dvh - 9rem);
