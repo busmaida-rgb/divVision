@@ -204,6 +204,10 @@ main {
     gap: 2rem;
 }
 
+.new-smart {
+    display: none;
+}
+
 /* 프로모션 */
 .promotion>.common-frame {
     display: flex;
@@ -312,6 +316,14 @@ main {
     }
 
     /* 신상품 */
+    .new-pc {
+        display: none;
+    }
+
+    .new-smart {
+        display: flex;
+    }
+
     .new1-text {
         left: 2rem;
         bottom: 3rem;
@@ -400,8 +412,8 @@ main {
         display: grid;
         row-gap: 1rem;
         column-gap: 1rem;
-        grid-template-rows: repeat(2, fit-content(100%));
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* 프로모션 */

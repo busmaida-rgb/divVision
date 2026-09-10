@@ -138,7 +138,7 @@ button {
     }
 }
 
-.product-train img {
+.product img {
     line-height: 0;
 }
 
@@ -149,7 +149,7 @@ button {
     gap: 1rem;
 }
 
-.product-train>a {
+.product a {
     width: 100%;
     aspect-ratio: 107/161;
     display: flex;
@@ -162,6 +162,10 @@ button {
     min-height: 2lh;
     text-align: center;
     word-break: keep-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
     font-weight: var(--fw2);
 }
 
