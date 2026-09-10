@@ -119,32 +119,6 @@ main {
     align-items: center;
 }
 
-.product-desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.product-desc>a:nth-of-type(1) {
-    font-weight: var(--fw2);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.product-desc>a:nth-of-type(2) {
-    color: var(--gray700);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    max-width: 100%;
-    overflow: hidden;
-}
-
 /* 신상품 */
 .new {
     display: flex;
