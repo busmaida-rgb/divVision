@@ -1144,62 +1144,6 @@ main {
     cursor: pointer;
 }
 
-
-
-/* =========================================
-   TOP 버튼
-========================================= */
-
-.btn-top {
-    width: 3.5rem;
-    height: 3.5rem;
-
-    padding: 0;
-
-    border: 1px solid #ddd;
-
-    border-radius: 50%;
-
-    background-color: #fff;
-
-    color: #222;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 0.2rem;
-
-    position: fixed;
-
-    right: 2rem;
-    bottom: 2rem;
-
-    z-index: 100;
-
-    font-size: 0.65rem;
-
-    cursor: pointer;
-}
-
-
-/* TOP 화살표 */
-
-.btn-top span {
-    width: 0.45rem;
-    height: 0.45rem;
-
-    border-top: 1px solid #222;
-    border-left: 1px solid #222;
-
-    transform: rotate(45deg);
-}
-
-
-
 /* =========================================================
    PAD
 ========================================================= */
@@ -1764,23 +1708,5 @@ main {
     .review-more button {
         width: 100%;
     }
-
-}
-
-
-
-/* =====================================
-       TOP
-    ===================================== */
-
-.btn-top {
-    width: 3rem;
-    height: 3rem;
-
-    right: 1rem;
-    bottom: 1rem;
-
-    font-size: 0.6rem;
-}
 
 }

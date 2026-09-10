@@ -178,6 +178,7 @@ button {
 ::-webkit-scrollbar {
     background: #F9F7EF;
     width: 12px;
+    height: 12px;
 }
 
 ::-webkit-scrollbar-track {
@@ -187,6 +188,39 @@ button {
 ::-webkit-scrollbar-thumb {
     background: var(--gray0);
     border-radius: 10px;
+}
+
+/* =========================================
+   TOP 버튼
+========================================= */
+.btn-top {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 100;
+    font-size: 0.65rem;
+    cursor: pointer;
+}
+
+/* TOP 화살표 */
+.btn-top span {
+    width: 0.45rem;
+    height: 0.45rem;
+    border-top: 1px solid #222;
+    border-left: 1px solid #222;
+    transform: rotate(45deg);
 }
 
 
@@ -239,5 +273,11 @@ button {
 
     .common-frame {
         padding: 0 var(--space-1rem);
+    }
+
+    .btn-top {
+        right: 1rem;
+        bottom: 1rem;
+        font-size: 0.6rem;
     }
 }

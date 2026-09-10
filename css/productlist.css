@@ -1,6 +1,6 @@
 .product-banner {
     margin-top: 5rem;
-    width: 100dvw;
+    width: 100%;
     aspect-ratio: 1920/700;
     background: url(../img/bestseller/bestbanner-pc.jpg) no-repeat 50% 50% / cover;
 }
